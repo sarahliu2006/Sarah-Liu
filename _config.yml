@@ -7,7 +7,7 @@
 # https://learnxinyminutes.com/docs/yaml/
 
 title: Sarah's blog
-description: An easy to use blogging platform with Jupyter Notebooks.
+description: For CSP Period 3.
 github_username: sarahliu2006
 # you can comment the below line out if your repo name is not different than your baseurl
 github_repo: "Sarah-Liu"
