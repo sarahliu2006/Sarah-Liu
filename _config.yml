@@ -36,11 +36,11 @@ url: "https://sarahliu2006.github.io" # the base hostname & protocol for your si
 #
 baseurl: "/Sarah-Liu" # the subpath of your site, e.g. "/blog".
 
-# Github and twitter are optional:
+# Github and instagram are optional:
 minima:
   social_links:
-    twitter: fastdotai
-    github: fastai
+    instagram: sarahchangliu
+    github: sarahliu2006
 
 # Set this to true to get LaTeX math equation support
 use_math: 
