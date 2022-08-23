@@ -1,4 +1,2 @@
-msg = "Hello world"
-print(msg)
-msg = "Ok bye"
-print(msg)
+print("hello students of del norte!")
+print("have a great day")
