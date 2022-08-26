@@ -5,8 +5,11 @@
    "metadata": {},
    "source": [
     "# Sarah's First Jupyter Notebook\n",
-    "\n",
-    "Basic Python code"
+    "---\n",
+    "Title: Hi Python\n",
+    "toc: true\n",
+    "comments: true\n",
+    "tags: [python]\n"
    ]
   },
   {
@@ -18,12 +21,12 @@
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "hello world\n"
+      "hello world!\n"
      ]
     }
    ],
    "source": [
-    "print(\"hello world\")"
+    "print(\"hello world!\")"
    ]
   }
  ],
