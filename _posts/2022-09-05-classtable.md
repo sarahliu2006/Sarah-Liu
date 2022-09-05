@@ -9,7 +9,7 @@ tags: [markdown]
 
 <table>
     <tr>
-     <th>Week #</th>
+     <th>Week</th>
      <th>Sprint</th>
     </tr>
     <tr>
