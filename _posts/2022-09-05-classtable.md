@@ -4,7 +4,8 @@ comments: true
 layout: post
 title: Class Table for CSP
 description: This is my class table for CSP!
-tags: [markdown]
+tags: true
+categories: [markdown,Week2]
 ---
 
 <table>
