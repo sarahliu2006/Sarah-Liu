@@ -17,13 +17,13 @@ tags: [markdown]
             0
         </td>
         <td>
-            [First Markdown Post/ About Me!](https://sarahliu2006.github.io/Sarah-Liu/2022/08/24/markdown.html)
+            https://sarahliu2006.github.io/Sarah-Liu/2022/08/24/markdown.html 
         </td>
         <td>
             0
         </td>
         <td>
-            [Sarah's Notebook Blog Post](https://sarahliu2006.github.io/Sarah-Liu/jupyter/2022/09/01/jupyterfirst.html)
+            https://sarahliu2006.github.io/Sarah-Liu/jupyter/week0/2022/08/21/jupyterfirst.html
         </td>
     </tr>
     <tr>
@@ -31,25 +31,25 @@ tags: [markdown]
             1
         </td>
         <td>
-            [Sarah Liu_ Rhetorical Precis](https://sarahliu2006.github.io/Sarah-Liu/2022/09/01/Sarah-Liu_-Rhetorical-Precis.html)
+            https://sarahliu2006.github.io/Sarah-Liu/jupyter/week1/2022/08/26/pythongame.html
         </td>
         <td>
             1
         </td>
         <td>
-            [Sarah's Bash Tool Checks](https://sarahliu2006.github.io/Sarah-Liu/jupyter/2022/09/01/bashtoolschecks.html)     
+             https://sarahliu2006.github.io/Sarah-Liu/jupyter/week1/2022/08/28/bashtoolschecks.html   
         </td>
         <td>
             1
         </td>
         <td>
-            [Sarah's Python Game](https://sarahliu2006.github.io/Sarah-Liu/jupyter/2022/09/01/pythongame.html)
+            https://sarahliu2006.github.io/Sarah-Liu/2022/09/05/Sarah-Liu_-Rhetorical-Precis.html
         </td>
         <td>
             1
         </td>
         <td>
-            [Vocab for CSP!](https://sarahliu2006.github.io/Sarah-Liu/vocab/)
+            https://sarahliu2006.github.io/Sarah-Liu/vocab/
         </td>
     </tr>
     <tr>
@@ -57,7 +57,7 @@ tags: [markdown]
             2
         </td>
         <td>
-            [Lists, Dictionaries, Iteration](https://sarahliu2006.github.io/Sarah-Liu/collegeboard/python_lists)
+            https://sarahliu2006.github.io/Sarah-Liu/collegeboard/python_lists
         </td>
     </tr>
 </table>
