@@ -20,6 +20,9 @@ tags: [markdown]
             [First Markdown Post/ About Me!](https://sarahliu2006.github.io/Sarah-Liu/2022/08/24/markdown.html)
         </td>
         <td>
+            0
+        </td>
+        <td>
             [Sarah's Notebook Blog Post](https://sarahliu2006.github.io/Sarah-Liu/jupyter/2022/09/01/jupyterfirst.html)
         </td>
     </tr>
@@ -31,10 +34,19 @@ tags: [markdown]
             [Sarah Liu_ Rhetorical Precis](https://sarahliu2006.github.io/Sarah-Liu/2022/09/01/Sarah-Liu_-Rhetorical-Precis.html)
         </td>
         <td>
+            1
+        </td>
+        <td>
             [Sarah's Bash Tool Checks](https://sarahliu2006.github.io/Sarah-Liu/jupyter/2022/09/01/bashtoolschecks.html)     
         </td>
         <td>
+            1
+        </td>
+        <td>
             [Sarah's Python Game](https://sarahliu2006.github.io/Sarah-Liu/jupyter/2022/09/01/pythongame.html)
+        </td>
+        <td>
+            1
         </td>
         <td>
             [Vocab for CSP!](https://sarahliu2006.github.io/Sarah-Liu/vocab/)
