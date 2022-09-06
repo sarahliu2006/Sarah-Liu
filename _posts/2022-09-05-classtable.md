@@ -10,7 +10,7 @@ tags: [markdown]
 <table>
     <tr>
      <th>Week</th>
-     <th>Sprint</th>
+     <th>Assignment</th>
     </tr>
     <tr>
         <td>
