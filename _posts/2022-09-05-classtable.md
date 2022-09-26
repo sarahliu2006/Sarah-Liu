@@ -67,4 +67,12 @@ categories: [markdown,Week2]
             <a href="https://sarahliu2006.github.io/Sarah-Liu/categories/">Tags</a> 
         </td>
     </tr>
+    <tr>
+        <td>
+            3
+        </td>
+        <td>
+            <a href="https://sarahliu2006.github.io/Sarah-Liu/markdown/week3/2022/09/11/applab.html">App Lab Quiz</a>
+        </td>
+    </tr>
 </table>
