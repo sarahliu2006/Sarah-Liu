@@ -2,6 +2,17 @@
   
     
         "post0": {
+            "title": "Sarah Liu_ Rhetorical Precis",
+            "content": "Sarah Liu . Ms. Darcey-Hall . Period 4 . 21 August 2022 . Rhetorical Precis . In the article “Op-Ed: We’re teaching kids to follow their dreams. Maybe teach them to be helpful instead”, Joel Stein stresses the difference between a figure who leads change rather than a figure who helps create change, that being someone who advocates and takes action is someone more helpful than one who is a leader of change. Stein develops his viewpoint using his son’s 4th grade class, where all the students had to choose a famous person to become in a “Living Wax Museum”. Through Stein’s observations, most of the students choose people that weren’t labeled as “problematic” or “evil”, but rather more “heroic”, even “virtuous”. He found this very infuriating because he found out that his son wanted to go as Nixon or Trump, “but was told that he had to pick a person who was admirable.” (Stein 4). This was even more angered when he saw a student dress up as Ghandi while also spreading false information about a man who wasn’t as heroic as textbooks say he was. Stein’s opinionful article reveals that exposing children to certain things will only prevent them to do greater things. His frustrated tone appeals to readers with interest in doing rather than leading. .",
+            "url": "https://sarahliu2006.github.io/Sarah-Liu/2022/10/13/Sarah-Liu_-Rhetorical-Precis.html",
+            "relUrl": "/2022/10/13/Sarah-Liu_-Rhetorical-Precis.html",
+            "date": " • Oct 13, 2022"
+        }
+        
+    
+  
+    
+        ,"post1": {
             "title": "Collegeboard Completed Assignments",
             "content": ".",
             "url": "https://sarahliu2006.github.io/Sarah-Liu/markdown/week7/2022/10/11/collegeboardmc.html",
@@ -12,22 +23,11 @@
     
   
     
-        ,"post1": {
+        ,"post2": {
             "title": "Trimester 1 Final Project Plan",
             "content": "Program Purpose and Function . Our program’s function is to help people with different illnesses identify their sickness by entering various symptoms (that we are pulling from a health API). The plan for the output is to give the user a simple diagnosis, and possibly methods and actions they should take going forward. We plan to further clarify the current confusion between COVID-19 symptoms and other common sickness symptoms. We hope to help those who are financially struggling and do not have access to a qualified doctor with a free algorithm that can serve as a diagnosis with generated advice for the user’s specific discomforts. . Data Abstraction . There will most likely be variables involved to make our code more organized and make the search easier. We plan to use loops and statements such as if, elif, for, and while loops to control our data extraction through time and other constraints. . Managing Complexity . Since we plan on using an API in our project, this means that we will be handling a lot of data, hence organization is required. We plan on doing this with lists and dictionaries to create and format our API in key-value pairs. This will be crucial to the function, organization, and efficiency of our project. In addition, by setting up a dictionary of lists, data can be pulled from the dictionary by creating an additional search, add, or delete function since each user who uses our project will need to register with the system we create. . Procedural Abstraction . We will create a search engine where the user can search for their symptoms and identify what sickness they have. The search engine will be able to narrow down the results of the different illnesses the user may have. To accomplish this task, we plan to make use of either AI sources to train and input data or create or use a general Rapid API database. . Algorithm Implementation . We are going to create a function that takes user inputs and compares them to a list of data that we have from the API. We will code the function to respond accordingly based on the user input. How is still to be determined . Testing . If we use an AI source, then we would have to input thousands of different varying from specifying symptoms, and random ones to train our AI and help it learn. Our other option is that after we create a flask website, and code our API sources program, we could use the input function to input different symptoms and see if the API or AI can decipher our symptoms and tell us the most likely illness that we have. .",
             "url": "https://sarahliu2006.github.io/Sarah-Liu/markdown/week7/2022/10/10/final.html",
             "relUrl": "/markdown/week7/2022/10/10/final.html",
-            "date": " • Oct 10, 2022"
-        }
-        
-    
-  
-    
-        ,"post2": {
-            "title": "Sarah Liu_ Rhetorical Precis",
-            "content": "Sarah Liu . Ms. Darcey-Hall . Period 4 . 21 August 2022 . Rhetorical Precis . In the article “Op-Ed: We’re teaching kids to follow their dreams. Maybe teach them to be helpful instead”, Joel Stein stresses the difference between a figure who leads change rather than a figure who helps create change, that being someone who advocates and takes action is someone more helpful than one who is a leader of change. Stein develops his viewpoint using his son’s 4th grade class, where all the students had to choose a famous person to become in a “Living Wax Museum”. Through Stein’s observations, most of the students choose people that weren’t labeled as “problematic” or “evil”, but rather more “heroic”, even “virtuous”. He found this very infuriating because he found out that his son wanted to go as Nixon or Trump, “but was told that he had to pick a person who was admirable.” (Stein 4). This was even more angered when he saw a student dress up as Ghandi while also spreading false information about a man who wasn’t as heroic as textbooks say he was. Stein’s opinionful article reveals that exposing children to certain things will only prevent them to do greater things. His frustrated tone appeals to readers with interest in doing rather than leading. .",
-            "url": "https://sarahliu2006.github.io/Sarah-Liu/2022/10/10/Sarah-Liu_-Rhetorical-Precis.html",
-            "relUrl": "/2022/10/10/Sarah-Liu_-Rhetorical-Precis.html",
             "date": " • Oct 10, 2022"
         }
         
