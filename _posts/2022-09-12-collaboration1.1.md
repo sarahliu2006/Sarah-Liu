@@ -2,7 +2,7 @@
 toc: true
 comments: true
 layout: post
-title: Collaboration 1.1 Notes!
+title: CollegeBoard Notes!
 description: These are my notes from watching the 1.1 Daily Video!
 tags: true
 categories: [markdown,Week4]
@@ -28,3 +28,27 @@ categories: [markdown,Week4]
         - Partner
         - Youself
         - Acknowledge code segments and media from other sources 
+
+
+
+
+Program Function and Purpose Quiz 3/3
+
+- DISPLAY –> “print()”
+- if statement commonly used when comparing one variable to another ex. (if x > y)
+- arrow –> “=” in code
+- initialize variable to #
+- REPEAT UNTIL serves as “for loop”
+- functions with multiple parameters
+
+## 4.1-4.2 Daily Videos Notes
+
+- computers used to be big and isolated –> computers now capable of sending & recieving data (binary)
+- packet: small amount of data sent over computer system, can be sent in any order and assembled in recipient's device
+- a message is broken into packets –> packets can be recieved in any order and still be reassembled by the recipient’s device
+- primary uses for the use of open protocols on the internet: provide a way to standardize data transmission between different devices.
+- The World Wide Web is a system of linked pages, programs, and files that is accessed via a network called the Internet.
+- look through each test case–> evaluate line of reasoning!!!
+
+<img src="https://github.com/sarahliu2006/Sarah-Liu/blob/master/images/cbcspmc.PNG?raw=true"> 
+
