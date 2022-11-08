@@ -2,7 +2,7 @@
 toc: true
 comments: true
 layout: post
-title: Class Table for CSP
+title: Class Table for CSP TRIMESTER 1
 description: This is my class table for CSP!
 tags: true
 categories: [markdown,Week2]
