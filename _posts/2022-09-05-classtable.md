@@ -75,4 +75,60 @@ categories: [markdown,Week2]
             <a href="https://sarahliu2006.github.io/Sarah-Liu/markdown/week3/2022/09/11/applab.html">App Lab Quiz</a>
         </td>
     </tr>
+    <tr>
+        <td>
+            4
+        </td>
+        <td>
+            <a href="https://sarahliu2006.github.io/Sarah-Liu/markdown/week4/2022/09/19/dockerlocal.html">Docker Local Fastpages</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            4
+        </td>
+        <td>
+            <a href="https://sarahliu2006.github.io/Sarah-Liu/markdown/week4/2022/09/12/collaboration1.1.html">College Board Notes</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            5
+        </td>
+        <td>
+            <a href="https://sarahliu2006.github.io/Sarah-Liu/markdown/week5/2022/09/25/scrum.html">Scrum Process/ VASE idea!</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            5
+        </td>
+        <td>
+            <a href="https://sarahliu2006.github.io/Sarah-Liu/collegeboard/javascript">Javascript Kernel</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            7
+        </td>
+        <td>
+            <a href="https://sarahliu2006.github.io/Sarah-Liu/markdown/week7/2022/10/10/final.html">Trimester 1 Final Plan</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            7
+        </td>
+        <td>
+            <a href="https://sarahliu2006.github.io/Sarah-Liu/rapidapi">Python RapidAPI</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            7
+        </td>
+        <td>
+            <a href="https://sarahliu2006.github.io/Sarah-Liu/errortesting">Error Testing</a>
+        </td>
+    </tr>
 </table>
