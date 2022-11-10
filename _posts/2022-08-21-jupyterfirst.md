@@ -6,7 +6,7 @@ toc: true
 badges: true
 comments: true
 tags: true
-categories: [jupyter,Week0]
+categories: [jupyter,Week0,tri1]
 nb_path: _notebooks/2022-08-21-jupyterfirst.ipynb
 layout: notebook
 ---

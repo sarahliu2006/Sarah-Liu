@@ -4,7 +4,7 @@ comments: true
 layout: post
 title: Trimester 1 Final Test Corrections
 tags: true
-categories: [markdown,Week10]
+categories: [markdown,Week10,tri1]
 ---
 
 ## Overall score
@@ -15,7 +15,7 @@ categories: [markdown,Week10]
 Question 1:
 <img src= "https://github.com/sarahliu2006/Sarah-Liu/blob/78b5ee26903e51809da4ffce1d7a33a90d13adda/images/question1csp.PNG?raw=true">
 What I answered: A, The code segment displays the value of  2(5×3)  by initializing result to 2 and then multiplying result by 3 a total of five times.
-The correct answer: D, The code segment displays the value of  2(53)  by initializing result to 2 and then multiplying result by 5 a total of three times. The code segment initializes result to 2, then repeatedly multiplies result by 5 inside a loop. The loop iterates three times, so result is assigned the value of 2(53).
+The correct answer: D, The code segment displays the value of  2(5^3)  by initializing result to 2 and then multiplying result by 5 a total of three times. The code segment initializes result to 2, then repeatedly multiplies result by 5 inside a loop. 
 
 Question 5:
 <img src= "https://github.com/sarahliu2006/Sarah-Liu/blob/3b97525ee0db2784c0a6a897082acc197d71702a/images/question5csp.PNG?raw=true">

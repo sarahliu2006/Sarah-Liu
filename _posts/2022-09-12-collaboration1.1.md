@@ -5,7 +5,7 @@ layout: post
 title: CollegeBoard Notes!
 description: These are my notes from watching the 1.1 Daily Video!
 tags: true
-categories: [markdown,Week4]
+categories: [markdown,Week4,tri1]
 ---
 
 ## 1.1 Daily Video 1

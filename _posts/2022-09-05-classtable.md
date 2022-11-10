@@ -5,7 +5,7 @@ layout: post
 title: Class Table for CSP TRIMESTER 1
 description: This is my class table for CSP!
 tags: true
-categories: [markdown,Week2]
+categories: [markdown,Week2,tri1]
 ---
 
 <table>
