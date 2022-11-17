@@ -1,6 +1,6 @@
 ---
 title: true
-layout: true
+layout: post
 description: Notes from class to help me understand lecture
 permalink: /notesfrombinary
 categories: [markdown,week11,tri2]
