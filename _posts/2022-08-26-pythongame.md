@@ -6,7 +6,7 @@ toc: true
 badges: true
 comments: true
 tags: true
-categories: [jupyter,Week1]
+categories: [jupyter,Week1,tri1]
 nb_path: _notebooks/2022-08-26-pythongame.ipynb
 layout: notebook
 ---

@@ -4,7 +4,7 @@ title: Lists, Dictionaries, Iteration
 toc: true
 permalink: /collegeboard/python_lists
 tags: true
-categories: [jupyter,Week2]
+categories: [jupyter,Week2,tri1]
 nb_path: _notebooks/2022-08-29-TP120-python_lists.ipynb
 layout: notebook
 ---
