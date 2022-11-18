@@ -9,7 +9,7 @@ categories: [markdown,Week11,tri2]
 tags: true
 ---
 
-<!-- {% include nav_frontend.html %} -->
+{% include nav_frontend.html %}
 {% assign BITS = 8 %}
 
 <div class="container bg-primary">
