@@ -1,5 +1,5 @@
 ---
-title: true
+title: Notes from Class!
 layout: post
 description: Notes from class to help me understand lecture
 permalink: /notesfrombinary

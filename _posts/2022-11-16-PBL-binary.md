@@ -1,6 +1,6 @@
 ---
-title: true
-layout: post
+title: Binary Math!
+layout: true
 description: A Binary Math illustrative application using HTML, Liquid, and JavaScript.
 permalink: /binary
 image: /images/binary.png
@@ -8,6 +8,7 @@ categories: [markdown,Week11,tri2]
 tags: true
 ---
 
+<!-- {% include nav_frontend.html %} -->
 {% assign BITS = 8 %}
 
 <div class="container bg-primary">
