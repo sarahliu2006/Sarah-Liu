@@ -1,12 +1,13 @@
 ---
-toc: true
-comments: true
-layout: post
+title: Binary Math
+layout: default
 description: A Binary Math illustrative application using HTML, Liquid, and JavaScript.
 permalink: /binary
 image: /images/binary.png
 categories: [markdown,Week11,tri2]
 tags: true
+week: 13
+type: pbl
 ---
 
 {% include nav_frontend.html %}
