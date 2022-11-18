@@ -1,5 +1,5 @@
 ---
-title: Binary Math!
+toc: true
 layout: true
 description: A Binary Math illustrative application using HTML, Liquid, and JavaScript.
 permalink: /binary
