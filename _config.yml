@@ -38,9 +38,12 @@ baseurl: "/Sarah-Liu" # the subpath of your site, e.g. "/blog".
 
 # Github and instagram are optional:
 minima:
+  skin: dark
+  #  social_links:
+  #    github: sarahliu2006
   social_links:
-    instagram: sarahchangliu
-    github: sarahliu2006
+    - { platform: github, user_url: "https://sarahliu2006.github.io/Sarah-Liu/"}
+    
 
 # Set this to true to get LaTeX math equation support
 use_math: 
