@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      4 min read
+      5 min read
     
 </span></p>
 
@@ -153,13 +153,12 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">convertFahrenheit</span> <span class="p">(</span><span class="n">temperature</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">convertFahrenheit</span><span class="p">(</span><span class="n">temperature</span><span class="p">):</span>
     <span class="n">celsius</span> <span class="o">=</span> <span class="n">temperature</span> <span class="o">-</span> <span class="mi">32</span>
-    <span class="n">celsius</span> <span class="o">=</span> <span class="n">celsius</span> <span class="o">*</span> <span class="mi">5</span><span class="o">/</span><span class="mi">9</span>
+    <span class="n">celsius</span> <span class="o">=</span> <span class="n">celsius</span> <span class="o">*</span> <span class="mf">0.56</span>
     <span class="k">return</span> <span class="n">celsius</span>
-    
 
-<span class="n">outsideTemp</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"What is the temperature outside?"</span><span class="p">)</span>
+<span class="n">outsideTemp</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"what is the temperature outside?"</span><span class="p">)</span>
 <span class="n">outsideTemp</span> <span class="o">=</span> <span class="p">(</span><span class="n">convertFahrenheit</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">outsideTemp</span><span class="p">)))</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">outsideTemp</span><span class="p">)</span>
 </pre></div>
@@ -173,18 +172,9 @@ window.onload = wrap_img;
 
 <div class="output_area">
 
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">TypeError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">/mnt/c/Users/Sarah Liu/vscode/Sarah-Liu/_notebooks/2022-12-07-developing-procedures.ipynb Cell 3</span> in <span class="ansi-cyan-fg">&lt;cell line: 7&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/mnt/c/Users/Sarah%20Liu/vscode/Sarah-Liu/_notebooks/2022-12-07-developing-procedures.ipynb#W2sdnNjb2RlLXJlbW90ZQ%3D%3D?line=2'&gt;3&lt;/a&gt;</span>     celsius = celsius * 5/9
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/mnt/c/Users/Sarah%20Liu/vscode/Sarah-Liu/_notebooks/2022-12-07-developing-procedures.ipynb#W2sdnNjb2RlLXJlbW90ZQ%3D%3D?line=3'&gt;4&lt;/a&gt;</span>     return celsius
-<span class="ansi-green-fg">----&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/mnt/c/Users/Sarah%20Liu/vscode/Sarah-Liu/_notebooks/2022-12-07-developing-procedures.ipynb#W2sdnNjb2RlLXJlbW90ZQ%3D%3D?line=6'&gt;7&lt;/a&gt;</span> outsideTemp = input("What is the temperature outside?")
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/mnt/c/Users/Sarah%20Liu/vscode/Sarah-Liu/_notebooks/2022-12-07-developing-procedures.ipynb#W2sdnNjb2RlLXJlbW90ZQ%3D%3D?line=7'&gt;8&lt;/a&gt;</span> outsideTemp = (convertFahrenheit(int(outsideTemp)))
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/mnt/c/Users/Sarah%20Liu/vscode/Sarah-Liu/_notebooks/2022-12-07-developing-procedures.ipynb#W2sdnNjb2RlLXJlbW90ZQ%3D%3D?line=8'&gt;9&lt;/a&gt;</span> print(outsideTemp)
-
-<span class="ansi-red-fg">TypeError</span>: 'int' object is not callable</pre>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>-6.720000000000001
+</pre>
 </div>
 </div>
 
@@ -222,13 +212,20 @@ Steps of developing procedure: picking a useful name, thinking of parameters (wh
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">currentGrade</span> <span class="p">(</span><span class="n">currentPoints</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">quizGrade</span> <span class="o">=</span> <span class="mi">32</span>
+<span class="k">def</span> <span class="nf">currentGrade</span><span class="p">(</span><span class="n">currentPoints</span><span class="p">):</span>    
     <span class="n">currentGrade</span> <span class="o">=</span> <span class="n">currentPoints</span> <span class="o">/</span> <span class="mi">40</span>
     <span class="n">currentGrade</span> <span class="o">=</span> <span class="n">currentGrade</span> <span class="o">*</span> <span class="mi">100</span>
     <span class="k">return</span> <span class="n">currentGrade</span>
 
-<span class="k">if</span> <span class="n">currentGrade</span> <span class="o">&gt;</span> <span class="n">quizGrade</span><span class="p">:</span>
-    <span class="n">quizGrade</span> <span class="o">&lt;-</span> <span class="n">currentGrade</span>
+<span class="n">newPoints</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"how many points do you currently have?"</span><span class="p">))</span>
+<span class="n">newPercent</span> <span class="o">=</span> <span class="p">(</span><span class="n">currentGrade</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">newPoints</span><span class="p">)))</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="n">newPoints</span> <span class="o">&gt;</span> <span class="n">quizGrade</span><span class="p">):</span>
+    <span class="n">newquizGrade</span> <span class="o">=</span> <span class="n">newPercent</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"your new grade is: "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">newquizGrade</span><span class="p">))</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"your score is still "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">quizGrade</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -240,17 +237,9 @@ Steps of developing procedure: picking a useful name, thinking of parameters (wh
 
 <div class="output_area">
 
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">TypeError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">/mnt/c/Users/Sarah Liu/vscode/Sarah-Liu/_notebooks/2022-12-07-developing-procedures.ipynb Cell 5</span> in <span class="ansi-cyan-fg">&lt;cell line: 6&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/mnt/c/Users/Sarah%20Liu/vscode/Sarah-Liu/_notebooks/2022-12-07-developing-procedures.ipynb#W4sdnNjb2RlLXJlbW90ZQ%3D%3D?line=2'&gt;3&lt;/a&gt;</span>     currentGrade = currentGrade * 100
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/mnt/c/Users/Sarah%20Liu/vscode/Sarah-Liu/_notebooks/2022-12-07-developing-procedures.ipynb#W4sdnNjb2RlLXJlbW90ZQ%3D%3D?line=3'&gt;4&lt;/a&gt;</span>     return currentGrade
-<span class="ansi-green-fg">----&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/mnt/c/Users/Sarah%20Liu/vscode/Sarah-Liu/_notebooks/2022-12-07-developing-procedures.ipynb#W4sdnNjb2RlLXJlbW90ZQ%3D%3D?line=5'&gt;6&lt;/a&gt;</span> if currentGrade &gt; quizGrade:
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/mnt/c/Users/Sarah%20Liu/vscode/Sarah-Liu/_notebooks/2022-12-07-developing-procedures.ipynb#W4sdnNjb2RlLXJlbW90ZQ%3D%3D?line=6'&gt;7&lt;/a&gt;</span>     quizGrade &lt;- currentGrade
-
-<span class="ansi-red-fg">TypeError</span>: '&gt;' not supported between instances of 'function' and 'int'</pre>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>your score is still 32
+</pre>
 </div>
 </div>
 
@@ -341,11 +330,71 @@ MOVE_FORWARD()</p>
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">procedure</span><span class="p">()</span>
-    <span class="c1"># code goes here</span>
-    <span class="k">return</span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">infoDb</span> <span class="o">=</span> <span class="p">[]</span>
 
-<span class="c1"># code goes here</span>
+<span class="n">infoDb</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+    <span class="s2">"Word"</span><span class="p">:</span> <span class="s2">"Pristine"</span><span class="p">,</span>
+    <span class="s2">"Definition"</span><span class="p">:</span> <span class="s2">"Pure, clean"</span><span class="p">,</span>
+<span class="p">})</span>
+
+<span class="n">infoDb</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+    <span class="s2">"Word"</span><span class="p">:</span> <span class="s2">"Expiation"</span><span class="p">,</span>
+    <span class="s2">"Definition"</span><span class="p">:</span> <span class="s2">"Atonement"</span><span class="p">,</span>
+<span class="p">})</span>
+
+<span class="k">def</span> <span class="nf">print_data2</span><span class="p">(</span><span class="n">d_rec</span><span class="p">):</span> <span class="c1">#formatting</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Word:"</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"Word"</span><span class="p">])</span>  <span class="c1"># using comma puts space between values</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Definition:"</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"Definition"</span><span class="p">])</span> <span class="c1"># \t is a tab indent</span>
+    <span class="nb">print</span><span class="p">()</span>
+
+<span class="k">def</span> <span class="nf">data_entry</span><span class="p">():</span> <span class="c1">#defining the function that asks for user input</span>
+    <span class="n">Word</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"What vocab word would you like to save in the database?"</span><span class="p">)</span>
+    <span class="n">Definition</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"What is the definition of the vocab word?"</span><span class="p">)</span>
+
+    <span class="n">infoDb</span><span class="o">.</span><span class="n">append</span><span class="p">({</span> <span class="c1">#appends the user input to the dictionary</span>
+        <span class="s2">"Word"</span><span class="p">:</span> <span class="n">Word</span><span class="p">,</span>
+        <span class="s2">"Definition"</span><span class="p">:</span> <span class="n">Definition</span><span class="p">,</span>
+   
+    <span class="p">})</span>
+
+<span class="k">def</span> <span class="nf">search_data</span><span class="p">(</span><span class="n">word</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">record</span> <span class="ow">in</span> <span class="n">infoDb</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">record</span><span class="p">[</span><span class="s2">"Word"</span><span class="p">]</span> <span class="o">==</span> <span class="n">word</span><span class="p">:</span> <span class="c1">#compares the already existing word to the word inputted with the word variable</span>
+            <span class="k">return</span> <span class="n">record</span>
+
+    <span class="k">return</span> <span class="n">NULL</span>
+
+<span class="k">def</span> <span class="nf">data_delete</span><span class="p">(</span><span class="n">word</span><span class="p">):</span>
+    <span class="n">record</span> <span class="o">=</span> <span class="n">search_data</span><span class="p">(</span><span class="n">word</span><span class="p">)</span> <span class="c1">#defines record as the word inputted with the search function</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">record</span> <span class="o">!=</span> <span class="n">NULL</span><span class="p">):</span> <span class="c1">#if the record doesn't equal null (does it exist?) then the next line removes it</span>
+        <span class="n">infoDb</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">record</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">word</span><span class="p">,</span> <span class="s2">"has been deleted!"</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Record not found!"</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="n">Continue</span> <span class="o">=</span> <span class="kc">True</span> <span class="c1">#defining continue as true</span>
+    <span class="k">while</span> <span class="n">Continue</span><span class="p">:</span>
+        <span class="n">lol</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"What would you like to do (add/search/delete, type no if you want to exit)?"</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">lol</span> <span class="o">==</span> <span class="s2">"no"</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"Come back again!"</span><span class="p">)</span>
+            <span class="n">Continue</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="k">elif</span> <span class="n">lol</span> <span class="o">==</span> <span class="s2">"add"</span><span class="p">:</span>
+            <span class="n">data_entry</span><span class="p">()</span>
+        <span class="k">elif</span> <span class="n">lol</span> <span class="o">==</span> <span class="s2">"search"</span><span class="p">:</span>
+            <span class="n">word</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"What word do you want to search?"</span><span class="p">)</span>
+            <span class="n">record</span> <span class="o">=</span> <span class="n">search_data</span><span class="p">(</span><span class="n">word</span><span class="p">)</span> <span class="c1">#defines record as the input "word" and runs it through the search function</span>
+            <span class="n">print_data2</span><span class="p">(</span><span class="n">record</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="n">lol</span> <span class="o">==</span> <span class="s2">"delete"</span><span class="p">:</span>
+            <span class="n">word</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"What word do you want to delete"</span><span class="p">)</span>
+            <span class="n">data_delete</span><span class="p">(</span><span class="n">word</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"Invalid input. Please try again"</span><span class="p">)</span>
+
+    <span class="n">length</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">infoDb</span><span class="p">)</span> <span class="c1">#defines length as the number of records</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Total Number of Words: "</span><span class="p">,</span> <span class="n">length</span><span class="p">)</span> 
+    <span class="k">for</span> <span class="n">record</span> <span class="ow">in</span> <span class="n">infoDb</span><span class="p">:</span>
+            <span class="n">print_data2</span><span class="p">(</span><span class="n">record</span><span class="p">)</span>
 </pre></div>
 
     </div>
