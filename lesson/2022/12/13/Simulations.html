@@ -65,7 +65,7 @@ window.onload = wrap_img;
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/Sarah-Liu/vocab/">Vocab for CSP!</a><a class="page-link" href="/Sarah-Liu/submenu/">Submenu for Javascript</a><a class="page-link" href="/Sarah-Liu/about/">About Sarah</a><a class="page-link" href="/Sarah-Liu/search/">Search</a><a class="page-link" href="/Sarah-Liu/categories/">Tags</a></div>
+        <div class="trigger"><a class="page-link" href="/Sarah-Liu/vocab/">Vocab for CSP!</a><a class="page-link" href="/Sarah-Liu/submenu/">Submenu for Javascript</a><a class="page-link" href="/Sarah-Liu/unit3/">Unit 3 Notes, Homework and Grades</a><a class="page-link" href="/Sarah-Liu/about/">About Sarah</a><a class="page-link" href="/Sarah-Liu/search/">Search</a><a class="page-link" href="/Sarah-Liu/categories/">Tags</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      5 min read
+      6 min read
     
 </span></p>
 
@@ -439,6 +439,59 @@ window.onload = wrap_img;
 </ul>
 <p>AND</p>
 <p>Find an example of a simulation in a software/game you use, screenshot, and explain how it is a simulation</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Welcome to my stock simulation. You will start with $1000. The goal is to reach $1,000,000 in the least amount of weeks. Test how good your strategies are and see how lucky you would be in real life! If you lose half of the initial investment, YOU LOSE, simulation over."</span><span class="p">)</span>
+
+<span class="n">win_rate</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"What is your win rate? (input integer number 1-100)"</span><span class="p">))</span>
+<span class="n">win_percent_floor</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"When you win, what is the minimum gain in percent? (input integer number)"</span><span class="p">))</span>
+<span class="n">win_percent_ceiling</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"When you win, what is the maximum gain in percent? (input integer number)"</span><span class="p">))</span>
+<span class="n">loss_percent_floor</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"When you lose, what is the minimum loss in percent? (input integer number)"</span><span class="p">))</span>
+<span class="n">loss_percent_ceiling</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"When you lose, what is the maximum loss in percent? (input integer number)"</span><span class="p">))</span>
+
+<span class="n">initial_invest</span> <span class="o">=</span> <span class="mi">1000</span>
+<span class="n">profit_target</span> <span class="o">=</span> <span class="mi">1000000</span>
+<span class="n">accumulated_profit</span> <span class="o">=</span> <span class="n">initial_invest</span>
+<span class="n">trade_count</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="k">while</span> <span class="n">accumulated_profit</span> <span class="o">&lt;</span> <span class="n">profit_target</span><span class="p">:</span>
+   <span class="n">won</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">win_rate</span>
+   <span class="k">if</span> <span class="n">won</span><span class="p">:</span>
+        <span class="n">win_percent</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="n">win_percent_floor</span><span class="p">,</span> <span class="n">win_percent_ceiling</span><span class="p">)</span>
+        <span class="n">accumulated_profit</span> <span class="o">=</span> <span class="n">accumulated_profit</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="nb">float</span><span class="p">(</span><span class="n">win_percent</span> <span class="o">/</span> <span class="mi">100</span><span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Winning trade! Accumulated profit: "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">accumulated_profit</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span><span class="o">+</span> <span class="s2">" Trade count: "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">trade_count</span><span class="p">))</span>
+   <span class="k">else</span><span class="p">:</span>
+        <span class="n">loss_percent</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="n">loss_percent_floor</span><span class="p">,</span> <span class="n">loss_percent_ceiling</span><span class="p">)</span>
+        <span class="n">accumulated_profit</span> <span class="o">=</span> <span class="n">accumulated_profit</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="nb">float</span><span class="p">(</span><span class="n">loss_percent</span> <span class="o">/</span> <span class="mi">100</span><span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Losing trade! Accumulated profit: "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">accumulated_profit</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span> <span class="o">+</span> <span class="s2">" Trade count: "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">trade_count</span><span class="p">))</span>
+        <span class="k">if</span> <span class="n">accumulated_profit</span> <span class="o">&lt;</span> <span class="mi">500</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"Game over, your strategy fell short of success"</span><span class="p">)</span>
+            <span class="k">break</span>
+   <span class="n">trade_count</span> <span class="o">=</span> <span class="n">trade_count</span> <span class="o">+</span> <span class="mi">1</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a href="https://github.com/sarahliu2006/Sarah-Liu/blob/5a02fa0446ba64c8bcc7038528f95dab34770f0d/images/desmos.PNG">https://github.com/sarahliu2006/Sarah-Liu/blob/5a02fa0446ba64c8bcc7038528f95dab34770f0d/images/desmos.PNG</a></p>
 
 </div>
 </div>
