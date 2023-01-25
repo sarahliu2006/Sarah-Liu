@@ -1,6 +1,6 @@
 ---
-# Blog Post Reflection for 5.1 and 5.2
-- title: View, JavaScript, Frontend
+- toc: true
+- title: Blog Post Reflection
 - toc: true
 - categories: []
 - image: /images/javascript.png
