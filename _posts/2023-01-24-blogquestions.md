@@ -3,15 +3,15 @@
 - title: Blog Post Reflection
 - toc: true
 - categories: []
-- image: /images/javascript.png
-- type: pbl
 - week: 18
 ---
 
 # Blog Post Reflection
 Come up with three of your own Beneficial and corresponding Harmful Effects of Computing
+1. 
 
 Talk about dopamine issues above. Real? Parent conspiracy? Anything that is impacting your personal study and success in High School?
+1. 
 
 # Blog Post Reflection – Digital Empowerment
 How does someone empower themself in a digital world?
