@@ -1,9 +1,11 @@
 ---
-- toc: true
-- title: Blog Post Reflection
-- toc: true
-- categories: []
-- week: 18
+toc: true
+title: Blog Post Reflection
+layout: post
+description: Blog Reflection
+permalink: /blogreflection
+categories: [markdown,week20,tri2]
+tags: true
 ---
 
 # Blog Post Reflection
