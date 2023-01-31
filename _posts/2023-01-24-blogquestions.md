@@ -41,3 +41,34 @@ prevents students from getting distracted (ex: games, youtube, instagram etc.).
 could block websites and videos that are actually informational and needed during classroom work-time
 This creates a bias against what should and should not be filtered. Some content that is actually purposeful and informational might get blocked just because of it's source which is considered "bad"
 students don't have access to good internet which can impair the quality of learning
+
+# For collegeboard mc, I got a 44/50
+
+# Q06
+<img src= "https://github.com/sarahliu2006/Sarah-Liu/blob/2f8c6efb93dba9b0d71a821cbdae441bfd14f845/images/q6.PNG?raw=true">
+I chose C, The expression (num MOD 2) will compute the remainder when num is divided by 2. This code fragment will display "odd" when num is even, which is the opposite of its intended behavior.
+
+# Q12
+<img src= "https://github.com/sarahliu2006/Sarah-Liu/blob/2f8c6efb93dba9b0d71a821cbdae441bfd14f845/images/q12.PNG?raw=true">
+I chose “(onFloor1 AND callTo2) AND (onFloor2 AND callTo1)” but the answer was “(onFloor1 OR callTo2) AND (onFloor2 AND callTo1)”
+Notes
+I overlooked the fact that there were two answers that were the same, the only difference being that one was AND and the other OR. In both the ways that the answer calls the function, the elevator will be able to move which is why the correct answer is “OR”
+
+# Q26
+<img src= "https://github.com/sarahliu2006/Sarah-Liu/blob/2f8c6efb93dba9b0d71a821cbdae441bfd14f845/images/q26.PNG?raw=true">
+I picked D, which had the robot in the center of the grid facing up. Although this is a possible location for the robot to end up in, it wasn’t facing in the correct direction. The robot should have been facing downward. Therefore, the correct answer is A, which has the robot in the center of the 5th row on the grid, facing to the left.
+
+# Q27
+<img src= "https://github.com/sarahliu2006/Sarah-Liu/blob/2f8c6efb93dba9b0d71a821cbdae441bfd14f845/images/q27.PNG?raw=true">
+I had chosen option C.This algorithm is wrong, however. This is because the function get messed up since the n = n+1 is set at the beginning, therefore, the “repeat n times” function will mess the code up from the beginning. Therefore, option D is correct because it sets the n = n+1 at the end of the algorithm.
+
+# Q28
+<img src= "https://github.com/sarahliu2006/Sarah-Liu/blob/2f8c6efb93dba9b0d71a821cbdae441bfd14f845/images/q28.PNG?raw=true">
+I selected answer B which was wrong because with each iteration of the Repeat 4 times loop, the robot will move two squares to the left and will remain facing up. On the third iteration of this loop, the robot will attempt to move to a square that is beyond the edge of the grid. At this point, the robot will stay in the lower-left square and the program will then stop. That is not supposed to happen. Therefore, the answers are A and C, both of which correctly execute what needed to be done. For A, each iteration of the Repeat 4 times loop, allows the robot to move one square to the left and one square up and will remain facing up. After four of these iterations, the robot will finish in the gray square. For C, after one iteration of the Repeat 2 times loop, the robot will end up in the upper-right square facing to the left. After the second iteration of the Repeat 2 times loop, the robot will end up in the upper-left square facing down. Both od these result in the robot ending in the gray square.
+
+# Q30
+<img src= "https://github.com/sarahliu2006/Sarah-Liu/blob/2f8c6efb93dba9b0d71a821cbdae441bfd14f845/images/q30.PNG?raw=true">
+For this one, I selected only one answer because I read the question wrong. It asked for 2 answers. I don’t know why I selected A which drew the circle before anything was defined in the program. I think that was a silly error on my part. I was probably getting confused with answer choice C which defined different numbers to x y and r.
+
+# Overall Thoughts/ Reflection
+Now to improve my CollegeBoard MCQ Test Scores I want to focus on getting better at looking at pseudo code segments and correctly identifying their errors, function, and improvements that can be made.
