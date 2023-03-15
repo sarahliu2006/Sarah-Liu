@@ -250,10 +250,6 @@ window.onload = wrap_img;
 <span class="sd">''' Tutorial: https://www.sqlalchemy.org/library.html#tutorials, try to get into a Python shell and follow along '''</span>
 
 <span class="c1"># Define the User class to manage actions in the 'users' table</span>
-<span class="c1"># -- Object Relational Mapping (ORM) is the key concept of SQLAlchemy</span>
-<span class="c1"># -- a.) db.Model is like an inner layer of the onion in ORM</span>
-<span class="c1"># -- b.) User represents data we want to store, something that is built on db.Model</span>
-<span class="c1"># -- c.) SQLAlchemy ORM is layer on top of SQLAlchemy Core, then SQLAlchemy engine, SQL</span>
 
 <span class="c1"># template for the user</span>
 <span class="k">class</span> <span class="nc">User</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>

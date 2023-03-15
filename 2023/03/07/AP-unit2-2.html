@@ -705,9 +705,11 @@ Is scale image a type of compression? If so, line it up with College Board terms
         <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="n">image</span><span class="p">[</span><span class="s1">'html'</span><span class="p">]))</span> 
 
         <span class="nb">print</span><span class="p">(</span><span class="s2">"-- red image --"</span><span class="p">)</span>
+        <span class="n">image_management_add_html_red</span><span class="p">(</span><span class="n">image</span><span class="p">)</span>
         <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="n">image</span><span class="p">[</span><span class="s1">'html_red'</span><span class="p">]))</span>
 
         <span class="nb">print</span><span class="p">(</span><span class="s2">"-- blue image --"</span><span class="p">)</span>
+        <span class="n">image_management_add_html_blue</span><span class="p">(</span><span class="n">image</span><span class="p">)</span>
         <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="n">image</span><span class="p">[</span><span class="s1">'html_blue'</span><span class="p">]))</span>
     <span class="nb">print</span><span class="p">()</span>
 </pre></div>
@@ -756,15 +758,15 @@ Scaled size:  (300, 300)
 <div class="output_subarea output_text output_error">
 <pre>
 <span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">KeyError</span>                                  Traceback (most recent call last)
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
 <span class="ansi-green-intense-fg ansi-bold">/mnt/c/Users/Sarah Liu/vscode/Sarah-Liu/_notebooks/2023-03-07-AP-unit2-2.ipynb Cell 12</span> in <span class="ansi-cyan-fg">&lt;cell line: 87&gt;</span><span class="ansi-blue-fg">()</span>
 <span class="ansi-green-intense-fg ansi-bold">    &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/mnt/c/Users/Sarah%20Liu/vscode/Sarah-Liu/_notebooks/2023-03-07-AP-unit2-2.ipynb#X14sdnNjb2RlLXJlbW90ZQ%3D%3D?line=102'&gt;103&lt;/a&gt;</span> display(HTML(image['html'])) 
 <span class="ansi-green-intense-fg ansi-bold">    &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/mnt/c/Users/Sarah%20Liu/vscode/Sarah-Liu/_notebooks/2023-03-07-AP-unit2-2.ipynb#X14sdnNjb2RlLXJlbW90ZQ%3D%3D?line=104'&gt;105&lt;/a&gt;</span> print("-- red image --")
-<span class="ansi-green-fg">--&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/mnt/c/Users/Sarah%20Liu/vscode/Sarah-Liu/_notebooks/2023-03-07-AP-unit2-2.ipynb#X14sdnNjb2RlLXJlbW90ZQ%3D%3D?line=105'&gt;106&lt;/a&gt;</span> display(HTML(image['red_data']))
-<span class="ansi-green-intense-fg ansi-bold">    &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/mnt/c/Users/Sarah%20Liu/vscode/Sarah-Liu/_notebooks/2023-03-07-AP-unit2-2.ipynb#X14sdnNjb2RlLXJlbW90ZQ%3D%3D?line=107'&gt;108&lt;/a&gt;</span> print("-- blue image --")
-<span class="ansi-green-intense-fg ansi-bold">    &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/mnt/c/Users/Sarah%20Liu/vscode/Sarah-Liu/_notebooks/2023-03-07-AP-unit2-2.ipynb#X14sdnNjb2RlLXJlbW90ZQ%3D%3D?line=108'&gt;109&lt;/a&gt;</span> display(HTML(image['blue_data']))
+<span class="ansi-green-fg">--&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/mnt/c/Users/Sarah%20Liu/vscode/Sarah-Liu/_notebooks/2023-03-07-AP-unit2-2.ipynb#X14sdnNjb2RlLXJlbW90ZQ%3D%3D?line=105'&gt;106&lt;/a&gt;</span> image_management_add_html_red(image)
+<span class="ansi-green-intense-fg ansi-bold">    &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/mnt/c/Users/Sarah%20Liu/vscode/Sarah-Liu/_notebooks/2023-03-07-AP-unit2-2.ipynb#X14sdnNjb2RlLXJlbW90ZQ%3D%3D?line=106'&gt;107&lt;/a&gt;</span> display(HTML(image['html_red']))
+<span class="ansi-green-intense-fg ansi-bold">    &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/mnt/c/Users/Sarah%20Liu/vscode/Sarah-Liu/_notebooks/2023-03-07-AP-unit2-2.ipynb#X14sdnNjb2RlLXJlbW90ZQ%3D%3D?line=108'&gt;109&lt;/a&gt;</span> print("-- blue image --")
 
-<span class="ansi-red-fg">KeyError</span>: 'red_data'</pre>
+<span class="ansi-red-fg">NameError</span>: name 'image_management_add_html_red' is not defined</pre>
 </div>
 </div>
 
