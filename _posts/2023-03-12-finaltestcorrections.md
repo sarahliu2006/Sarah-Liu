@@ -7,7 +7,7 @@ categories: [markdown,week26,tri3]
 tags: true
 ---
 ## Overall score
-<img src= "">
+<img src= "https://github.com/sarahliu2006/Sarah-Liu/blob/e990d3dd4b6bd67c3011e28067983f250cb34fd4/images/tri2final.PNG">
 
 ## Test Corrections
 
@@ -43,30 +43,30 @@ The correct answer: B, The first three statements assign values to the variables
 
 Question 31:
 <img src= "https://github.com/sarahliu2006/Sarah-Liu/blob/42f3027a480f32ddf49a150c661b68e303844e98/images/2q31.PNG">
-What I answered: B
-The correct answer: D
+What I answered: B, This algorithm will turn on the motor in some cases when the gate is already open.
+The correct answer: D, The algorithm continues past the first check if the time is during business hours, the algorithm continues past the second check if the gate sensor is activated, and the algorithm continues past the third check if the gate is not open. Performing the checks in this order will ensure that the gate is opened only under the appropriate conditions.
 
 Question 33:
 <img src= "https://github.com/sarahliu2006/Sarah-Liu/blob/42f3027a480f32ddf49a150c661b68e303844e98/images/2q33.PNG">
-What I answered: 
-The correct answer: 
+What I answered: D, This code segment leaves the robot four rows above its starting position and two rows above the gray square.
+The correct answer: B, The loop that repeats four times returns the robot to its starting position. The three lines of code that follow the loop move the robot one row up and leave it facing right. When this has been repeated twice, the robot is in the gray square.
 
 Question 37:
 <img src= "https://github.com/sarahliu2006/Sarah-Liu/blob/42f3027a480f32ddf49a150c661b68e303844e98/images/2q37.PNG">
-What I answered: 
-The correct answer: 
+What I answered: A, The value "ONE" is displayed only when x is greater than 10 and y is less than 10. For example, "ONE" will be displayed if x is 15 and y is 5.
+The correct answer: C, The value "THREE" is displayed whenever x is less than or equal to 10 and y is greater than 3.
 
 Question 38:
 <img src= "https://github.com/sarahliu2006/Sarah-Liu/blob/42f3027a480f32ddf49a150c661b68e303844e98/images/2q38.PNG">
-What I answered: 
-The correct answer: 
+What I answered: A, The given code segment displays "positive" when num is positive, displays "negative" when num is negative, and displays "zero" when num is 0. This code segment does not produce the same result for all values of num. For example, "positive zero" is displayed when num is 0.
+The correct answer: B, The given code segment displays "positive" when num is positive, displays "negative" when num is negative, and displays "zero" when num is 0. This code segment produces the same result. When num is negative, "negative" is displayed. Otherwise, when num is 0, "zero" is displayed. Otherwise, "positive" is displayed.
 
 Question 44:
 <img src= "https://github.com/sarahliu2006/Sarah-Liu/blob/42f3027a480f32ddf49a150c661b68e303844e98/images/2q44.PNG">
-What I answered: A
-The correct answer: B
+What I answered: A, The first call to printArgs displays two asterisks, not one. The second call to printArgs displays one asterisk, not two.
+The correct answer: B, The first call to printArgs displays the number 1, followed by the string "**", followed by the number 1. The second call to printArgs displays the number 2, followed by the string "*", followed by the number 2.
 
 Question 50:
 <img src= "https://github.com/sarahliu2006/Sarah-Liu/blob/42f3027a480f32ddf49a150c661b68e303844e98/images/2q50.PNG">
-What I answered: B, C
-The correct answer: A, D
+What I answered: B & C
+The correct answer: A & D
