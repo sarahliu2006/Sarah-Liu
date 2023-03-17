@@ -356,9 +356,9 @@ window.onload = wrap_img;
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">create</span><span class="p">():</span>
     <span class="n">distance</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter distance to create"</span><span class="p">)</span>
+
     <span class="nb">zip</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter zipcode to create"</span><span class="p">)</span>
     <span class="n">brand</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"ENter brand to update"</span><span class="p">)</span>
-    <span class="n">location</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter location to create"</span><span class="p">)</span>
 
 <span class="n">create</span><span class="p">()</span>    
 </pre></div>
@@ -380,7 +380,7 @@ window.onload = wrap_img;
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">read</span><span class="p">():</span>
     <span class="k">with</span> <span class="n">app</span><span class="o">.</span><span class="n">app_context</span><span class="p">():</span>
         <span class="n">table</span> <span class="o">=</span> <span class="n">initDealerships</span><span class="o">.</span><span class="n">query</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>
-    <span class="n">json_ready</span> <span class="o">=</span> <span class="p">[</span><span class="n">user</span><span class="o">.</span><span class="n">read</span><span class="p">()</span> <span class="k">for</span> <span class="n">user</span> <span class="ow">in</span> <span class="n">table</span><span class="p">]</span> <span class="c1"># each user adds user.read() to list</span>
+    <span class="n">json_ready</span> <span class="o">=</span> <span class="p">[</span><span class="n">Dealership</span><span class="o">.</span><span class="n">read</span><span class="p">()</span> <span class="k">for</span> <span class="n">dealership</span> <span class="ow">in</span> <span class="n">table</span><span class="p">]</span> <span class="c1"># each user adds user.read() to list</span>
     <span class="k">return</span> <span class="n">json_ready</span>
 
 <span class="n">read</span><span class="p">()</span>
@@ -401,10 +401,9 @@ window.onload = wrap_img;
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">update</span><span class="p">():</span>
-    <span class="n">distance</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter distance to update"</span><span class="p">)</span> <span class="c1"># optimize to see if distance exists</span>
-    <span class="nb">zip</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter zipcode to update"</span><span class="p">)</span> <span class="c1">#optimize to see if zipcode exists</span>
-    <span class="n">brand</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter brand to update"</span><span class="p">)</span> <span class="c1"># optimize to see if brand exists</span>
-    <span class="n">location</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter location to update"</span><span class="p">)</span> <span class="c1">#optimize to see if location exists</span>
+    <span class="n">distance</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter distance to update"</span><span class="p">)</span> 
+    <span class="nb">zip</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter zipcode to update"</span><span class="p">)</span> 
+    <span class="n">brand</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter brand to update"</span><span class="p">)</span> 
 
 <span class="n">update</span><span class="p">()</span>
 </pre></div>
@@ -427,7 +426,6 @@ window.onload = wrap_img;
     <span class="n">distance</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter distance to delete"</span><span class="p">)</span>
     <span class="nb">zip</span> <span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Enter zipcode to delete"</span><span class="p">)</span>
     <span class="n">brand</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter brand to update"</span><span class="p">)</span>
-    <span class="n">location</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter location to delete"</span><span class="p">)</span>
 
 <span class="n">delete</span><span class="p">()</span>
 </pre></div>
