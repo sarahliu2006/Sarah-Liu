@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      7 min read
+      9 min read
     
 </span></p>
 
@@ -164,8 +164,16 @@ window.onload = wrap_img;
 <li>Comment on where you have observed these working?</li>
 </ul>
 <ol>
-<li>Flask app object</li>
-<li>SQLAlchemy object</li>
+<li>Flask app object<ul>
+<li>Seen this used in past projects in trimester 1 and 2</li>
+<li>The purpose of the app object is to represent your web application. It is an instance of the Flask class, and it is used to configure your application and define its behavior. The app object is used to register routes, set up configuration variables, and define extensions that your application may use.</li>
+</ul>
+</li>
+<li>SQLAlchemy object<ul>
+<li>I have observed this working in my own CPT project. I use a sqlite database and I use the db object to read and create the database.</li>
+<li>The purpose of the SQLAlchemy db object is to interact with your application's database. It is an instance of the SQLAlchemy class, and it provides a high-level interface for interacting with databases using Python code.</li>
+</ul>
+</li>
 </ol>
 
 </div>
@@ -220,12 +228,11 @@ window.onload = wrap_img;
 </blockquote>
 <ul>
 <li>Comment on these items in the class</li>
-<li>class User purpose</li>
-<li>db.Model inheritance</li>
+<li>class User purpose:Defines users properties to classify the user- db.Model inheritance: The ability to create a new model class that inherits from an existing model class, thereby inheriting all of its fields and methods</li>
 <li>
-<em>init</em> method</li>
-<li>@property, @<column>.setter&lt;/li&gt;
-<li>additional methods</li>
+<em>init</em> method: Constructs user objects</li>
+<li>@property, @<column>.setter: Getter and setter methods&lt;/li&gt;
+<li>additional methods  (CRUD): create database, read the data and display on table (sqlite), update data, and delete data.</li>
 &lt;/ul&gt;
 
 &lt;/div&gt;
@@ -398,9 +405,8 @@ window.onload = wrap_img;
 <li>Comment on how these work?</li>
 </ul>
 <ol>
-<li>Create All Tables from db Object</li>
-<li>User Object Constructors</li>
-<li>Try / Except </li>
+<li>Create All Tables from db Object:Uses SQLALchemy db.create_all() to initialize rows into sqlite.db2. User Object Constructors: Uses getter and setter methods to initialize user objects.</li>
+<li>Try / Except: Cleans out excess/ repeated data</li>
 </ol>
 
 </div>
@@ -484,8 +490,7 @@ Records exist uid raven, or error.
 <li>Comment on purpose of following</li>
 </ul>
 <ol>
-<li>User.query.filter_by</li>
-<li>user.password</li>
+<li>User.query.filter_by:Filters the database by uid and identifies the user whose uid matches the input2. user.password: Check-credentials compares that inputted password to the password of the user with the inputted uid. In essence, this is like a security feature.</li>
 </ol>
 
 </div>
@@ -537,10 +542,9 @@ Records exist uid raven, or error.
 <li>Comment on purpose of following</li>
 </ul>
 <ol>
-<li>user.find_by_uid() and try/except</li>
-<li>user = User(...)</li>
-<li>user.dob and try/except</li>
-<li>user.create() and try/except</li>
+<li>user.find_by_uid() and try/except:The find_by_uid() filters the database by uid and identifies the user whose uid matches the input. it then returns that user. 2. user = User(...): Initializes the user objects before date of birth</li>
+<li>user.dob and try/except:A placeholder for the birth date of the user. It ensures that users write their date of birth in the right format otherwise an exception occurs and the date of birth is set to the default.</li>
+<li>user.create() and try/except: Creates a new user to add the the sqlite table based off of the input it receives from the user.</li>
 </ol>
 
 </div>
