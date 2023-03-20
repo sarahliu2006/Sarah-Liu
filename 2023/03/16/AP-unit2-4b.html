@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      5 min read
+      8 min read
     
 </span></p>
 
@@ -146,10 +146,22 @@ window.onload = wrap_img;
 <p>Uses PRAGMA statement to read schema.</p>
 </blockquote>
 <p>Describe Schema, here is resource <a href="https://www.sqlite.org/index.html">Resource</a>- What is a database schema?</p>
+
+<pre><code>- The columns of a database aka the information that populates the datatable.
+</code></pre>
 <ul>
-<li>What is the purpose of identity Column in SQL database?</li>
-<li>What is the purpose of a primary key in SQL database?</li>
-<li>What are the Data Types in SQL table?</li>
+<li>What is the purpose of identity Column in SQL database?<ul>
+<li>The purpose is to have unique rows of data and to be able to differentiate different users.</li>
+</ul>
+</li>
+<li>What is the purpose of a primary key in SQL database?<ul>
+<li>The primary key has to be unique because it is used as an identifier for different people. For example, name would not be a good primary key because two people could have the same name.</li>
+</ul>
+</li>
+<li>What are the Data Types in SQL table?<ul>
+<li>Strings, integers, boolean, images</li>
+</ul>
+</li>
 </ul>
 
 </div>
@@ -222,10 +234,23 @@ window.onload = wrap_img;
 <p>Uses SQL SELECT statement to read data</p>
 </blockquote>
 <ul>
-<li>What is a connection object?  After you google it, what do you think it does?</li>
-<li>Same for cursor object?</li>
-<li>Look at conn object and cursor object in VSCode debugger.  What attributes are in the object?</li>
-<li>Is "results" an object?  How do you know?</li>
+<li>What is a connection object?  After you google it, what do you think it does?<ul>
+<li>Each open SQLite database is represented by a Connection object, which is created using sqlite3.connect() . Their main purpose is creating Cursor objects, and Transaction control.</li>
+</ul>
+</li>
+<li>Same for cursor object?<ul>
+<li>Simplifies the code for the user. an instance using which you can invoke methods that execute SQLite statements, fetch data from the result sets of the queries.</li>
+</ul>
+</li>
+<li>Look at conn object and cursor object in VSCode debugger.  What attributes are in the object?<ul>
+<li>The cursor object contains attributes like special variables, function variables, and class variables</li>
+<li>Conn object contains attributes like special variables and function variables</li>
+</ul>
+</li>
+<li>Is "results" an object?  How do you know?<ul>
+<li>Results is an object because it has attributes</li>
+</ul>
+</li>
 </ul>
 
 </div>
@@ -299,8 +324,15 @@ window.onload = wrap_img;
 <blockquote>
 <p>Uses SQL INSERT to add row</p>
 <ul>
-<li>Compore create() in both SQL lessons.  What is better or worse in the two implementations?</li>
-<li>Explain purpose of SQL INSERT.   Is this the same as User <strong>init</strong>?</li>
+<li>Compore create() in both SQL lessons.  What is better or worse in the two implementations?<ul>
+<li>Out of the two create(), the sqlite3 method using conn and cur is better. It is able to accomplish the same thing with less code while being less complicated and just as efficient.</li>
+</ul>
+</li>
+<li>Explain purpose of SQL INSERT.   Is this the same as User <strong>init</strong>?<ul>
+<li>SQL INSERT is a command used to add new records or rows of data to a database table</li>
+<li>User init is a method used in object-oriented programming languages like Python. The init method is used to initialize the properties or attributes of an object when it is created.</li>
+</ul>
+</li>
 </ul>
 </blockquote>
 
@@ -363,9 +395,18 @@ window.onload = wrap_img;
 <blockquote>
 <p>Uses SQL UPDATE to modify password</p>
 <ul>
-<li>What does the hacked part do?</li>
-<li>Explain try/except, when would except occur?</li>
-<li>What code seems to be repeated in each of these examples to point, why is it repeated?</li>
+<li>What does the hacked part do?<ul>
+<li>It serves like a warning message. When the length of my password is less than 2, the message will appear.</li>
+</ul>
+</li>
+<li>Explain try/except, when would except occur?<ul>
+<li>Except would occur if there is a sqlite3 error</li>
+</ul>
+</li>
+<li>What code seems to be repeated in each of these examples to point, why is it repeated?<ul>
+<li>cursor = conn.cursor() is repeated in each example. Most likely because this line of code is necessary to connect to the database</li>
+</ul>
+</li>
 </ul>
 </blockquote>
 
@@ -432,8 +473,15 @@ window.onload = wrap_img;
 <blockquote>
 <p>Uses a delete function to remove a user based on a user input of the id.</p>
 <ul>
-<li>Is DELETE a dangerous operation?  Why?</li>
-<li>What is the "f" and {uid} do?</li>
+<li>Is DELETE a dangerous operation?  Why?<ul>
+<li>When you perform a delete operation on a SQLite database, you are permanently removing data from the database. If you accidentally delete the wrong data or forget to include a WHERE clause in your delete statement, you can end up losing valuable data.</li>
+</ul>
+</li>
+<li>What is the "f" and {uid} do?<ul>
+<li>{uid} gets the uid of the user in question</li>
+<li>"f" is the syntax for formatted string literals. Inside this string, you can write a Python expression between { } characters that can refer to variables or literal values.</li>
+</ul>
+</li>
 </ul>
 </blockquote>
 
@@ -493,8 +541,14 @@ window.onload = wrap_img;
 <blockquote>
 <p>CRUD and Schema interactions from one location by running menu. Observe input at the top of VSCode, observe output underneath code cell.</p>
 <ul>
-<li>Why does the menu repeat?</li>
-<li>Could you refactor this menu?  Make it work with a List?</li>
+<li>Why does the menu repeat?<ul>
+<li>As the function continues, it calls itself, thus the menu is always repeating</li>
+</ul>
+</li>
+<li>Could you refactor this menu?  Make it work with a List?<ul>
+<li>Yes its better to refactor this menu since recursion can lead to stack overflow.</li>
+</ul>
+</li>
 </ul>
 </blockquote>
 
@@ -547,10 +601,11 @@ window.onload = wrap_img;
 <a class="anchor" href="#Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hacks<a class="anchor-link" href="#Hacks"> </a>
 </h1>
 <ul>
-<li>Add this Blog to you own Blogging site.  In the Blog add notes and observations on each code cell.</li>
-<li>Create a new Table or do something new, <a href="https://www.sqlitetutorial.net/sqlite-python/creating-tables/">sqlite documentation</a>
-</li>
-<li>In implementation in previous bullet, do you see procedural abstraction?</li>
+<li>Add this Blog to you own Blogging site.  In the Blog add notes and observations on each code cell.
+-In 2.4a or 2.4b lecture
+Do you see data abstraction? Complement this with Debugging example.
+Yes. For example, the class User is an example of data abstraction. it initializes multiple objects with several parameters. It would be very hard to save properties of a user into a database if they were not all comprised into one object. Thus, in this sense, the data is abstracted
+Use Imperative or OOP style to Create a new Table or do something that applies to your CPT project.</li>
 </ul>
 
 </div>
