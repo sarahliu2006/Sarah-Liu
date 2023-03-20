@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      7 min read
+      9 min read
     
 </span></p>
 
@@ -300,12 +300,6 @@ window.onload = wrap_img;
 
         <span class="n">cars</span> <span class="o">=</span> <span class="p">[</span><span class="n">c1</span><span class="p">,</span> <span class="n">c2</span><span class="p">,</span> <span class="n">c3</span><span class="p">,</span> <span class="n">c4</span><span class="p">,</span> <span class="n">c5</span><span class="p">,</span> <span class="n">c6</span><span class="p">,</span> <span class="n">c7</span><span class="p">,</span> <span class="n">c8</span><span class="p">,</span> <span class="n">c9</span><span class="p">,</span> <span class="n">c10</span><span class="p">,</span> <span class="n">c11</span><span class="p">,</span> <span class="n">c12</span><span class="p">,</span> <span class="n">c13</span><span class="p">,</span> <span class="n">c14</span><span class="p">,</span> <span class="n">c15</span><span class="p">,</span> <span class="n">c16</span><span class="p">,</span> <span class="n">c17</span><span class="p">,</span> <span class="n">c18</span><span class="p">,</span> <span class="n">c19</span><span class="p">,</span> <span class="n">c20</span><span class="p">,</span> <span class="n">c21</span><span class="p">,</span> <span class="n">c22</span><span class="p">,</span> <span class="n">c23</span><span class="p">,</span> <span class="n">c24</span><span class="p">,</span> <span class="n">c25</span><span class="p">,</span> <span class="n">c26</span><span class="p">,</span> <span class="n">c27</span><span class="p">,</span> <span class="n">c28</span><span class="p">,</span> <span class="n">c29</span><span class="p">,</span> <span class="n">c30</span><span class="p">,</span> <span class="n">c31</span><span class="p">,</span> <span class="n">c32</span><span class="p">,</span> <span class="n">c33</span><span class="p">,</span> <span class="n">c34</span><span class="p">,</span> <span class="n">c35</span><span class="p">]</span>
 
-        <span class="c1">#try:</span>
-        <span class="c1">#    db.session.query(Car).delete()</span>
-        <span class="c1">#    db.session.commit()</span>
-        <span class="c1">#except:</span>
-        <span class="c1">#    db.session.rollback()</span>
-
         <span class="sd">"""Builds sample car/note(s) data"""</span>
         <span class="k">for</span> <span class="n">user</span> <span class="ow">in</span> <span class="n">cars</span><span class="p">:</span>
             <span class="k">try</span><span class="p">:</span>
@@ -320,6 +314,42 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">AttributeError</span>                            Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/mnt/c/Users/Sarah Liu/vscode/Sarah-Liu/_notebooks/2023-03-13-hacksfor2-4a.ipynb Cell 4</span> in <span class="ansi-cyan-fg">initCars</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/mnt/c/Users/Sarah%20Liu/vscode/Sarah-Liu/_notebooks/2023-03-13-hacksfor2-4a.ipynb#W3sdnNjb2RlLXJlbW90ZQ%3D%3D?line=47'&gt;48&lt;/a&gt;</span> '''add car to table'''
+<span class="ansi-green-fg">---&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/mnt/c/Users/Sarah%20Liu/vscode/Sarah-Liu/_notebooks/2023-03-13-hacksfor2-4a.ipynb#W3sdnNjb2RlLXJlbW90ZQ%3D%3D?line=48'&gt;49&lt;/a&gt;</span> object = Car.create()
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/mnt/c/Users/Sarah%20Liu/vscode/Sarah-Liu/_notebooks/2023-03-13-hacksfor2-4a.ipynb#W3sdnNjb2RlLXJlbW90ZQ%3D%3D?line=49'&gt;50&lt;/a&gt;</span> print(f"Created new car {object.Car}")
+
+<span class="ansi-red-fg">AttributeError</span>: type object 'Car' has no attribute 'create'
+
+During handling of the above exception, another exception occurred:
+
+<span class="ansi-red-fg">AttributeError</span>                            Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/mnt/c/Users/Sarah Liu/vscode/Sarah-Liu/_notebooks/2023-03-13-hacksfor2-4a.ipynb Cell 4</span> in <span class="ansi-cyan-fg">&lt;cell line: 55&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/mnt/c/Users/Sarah%20Liu/vscode/Sarah-Liu/_notebooks/2023-03-13-hacksfor2-4a.ipynb#W3sdnNjb2RlLXJlbW90ZQ%3D%3D?line=51'&gt;52&lt;/a&gt;</span>                 '''fails with bad or duplicate data'''
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/mnt/c/Users/Sarah%20Liu/vscode/Sarah-Liu/_notebooks/2023-03-13-hacksfor2-4a.ipynb#W3sdnNjb2RlLXJlbW90ZQ%3D%3D?line=52'&gt;53&lt;/a&gt;</span>                 print(f"Records exist car {user.Car}, or error.")
+<span class="ansi-green-fg">---&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/mnt/c/Users/Sarah%20Liu/vscode/Sarah-Liu/_notebooks/2023-03-13-hacksfor2-4a.ipynb#W3sdnNjb2RlLXJlbW90ZQ%3D%3D?line=54'&gt;55&lt;/a&gt;</span> initCars()
+
+<span class="ansi-green-intense-fg ansi-bold">/mnt/c/Users/Sarah Liu/vscode/Sarah-Liu/_notebooks/2023-03-13-hacksfor2-4a.ipynb Cell 4</span> in <span class="ansi-cyan-fg">initCars</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/mnt/c/Users/Sarah%20Liu/vscode/Sarah-Liu/_notebooks/2023-03-13-hacksfor2-4a.ipynb#W3sdnNjb2RlLXJlbW90ZQ%3D%3D?line=50'&gt;51&lt;/a&gt;</span> except:  # error raised if object nit created
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/mnt/c/Users/Sarah%20Liu/vscode/Sarah-Liu/_notebooks/2023-03-13-hacksfor2-4a.ipynb#W3sdnNjb2RlLXJlbW90ZQ%3D%3D?line=51'&gt;52&lt;/a&gt;</span>     '''fails with bad or duplicate data'''
+<span class="ansi-green-fg">---&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/mnt/c/Users/Sarah%20Liu/vscode/Sarah-Liu/_notebooks/2023-03-13-hacksfor2-4a.ipynb#W3sdnNjb2RlLXJlbW90ZQ%3D%3D?line=52'&gt;53&lt;/a&gt;</span>     print(f"Records exist car {user.Car}, or error.")
+
+<span class="ansi-red-fg">AttributeError</span>: 'Car' object has no attribute 'Car'</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -678,6 +708,79 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">AttributeError</span>                            Traceback (most recent call last)
+File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/sqlalchemy/sql/base.py:2120</span>, in <span class="ansi-cyan-fg">_entity_namespace_key</span><span class="ansi-blue-fg">(entity, key, default)</span>
+<span class="ansi-green-intense-fg ansi-bold">   2119</span>     else:
+<span class="ansi-green-fg">-&gt; 2120</span>         return getattr(ns, key)  # type: ignore
+<span class="ansi-green-intense-fg ansi-bold">   2121</span> except AttributeError as err:
+
+<span class="ansi-red-fg">AttributeError</span>: type object 'Car' has no attribute '_uid'
+
+The above exception was the direct cause of the following exception:
+
+<span class="ansi-red-fg">InvalidRequestError</span>                       Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/mnt/c/Users/Sarah Liu/vscode/Sarah-Liu/_notebooks/2023-03-13-hacksfor2-4a.ipynb Cell 8</span> in <span class="ansi-cyan-fg">&lt;cell line: 14&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/mnt/c/Users/Sarah%20Liu/vscode/Sarah-Liu/_notebooks/2023-03-13-hacksfor2-4a.ipynb#X10sdnNjb2RlLXJlbW90ZQ%3D%3D?line=10'&gt;11&lt;/a&gt;</span>             pass # keep going
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/mnt/c/Users/Sarah%20Liu/vscode/Sarah-Liu/_notebooks/2023-03-13-hacksfor2-4a.ipynb#X10sdnNjb2RlLXJlbW90ZQ%3D%3D?line=12'&gt;13&lt;/a&gt;</span> uid = input("Enter your car uid:")
+<span class="ansi-green-fg">---&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/mnt/c/Users/Sarah%20Liu/vscode/Sarah-Liu/_notebooks/2023-03-13-hacksfor2-4a.ipynb#X10sdnNjb2RlLXJlbW90ZQ%3D%3D?line=13'&gt;14&lt;/a&gt;</span> deleteCar(uid)
+
+<span class="ansi-green-intense-fg ansi-bold">/mnt/c/Users/Sarah Liu/vscode/Sarah-Liu/_notebooks/2023-03-13-hacksfor2-4a.ipynb Cell 8</span> in <span class="ansi-cyan-fg">deleteCar</span><span class="ansi-blue-fg">(uid)</span>
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/mnt/c/Users/Sarah%20Liu/vscode/Sarah-Liu/_notebooks/2023-03-13-hacksfor2-4a.ipynb#X10sdnNjb2RlLXJlbW90ZQ%3D%3D?line=0'&gt;1&lt;/a&gt;</span> def deleteCar(uid):
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/mnt/c/Users/Sarah%20Liu/vscode/Sarah-Liu/_notebooks/2023-03-13-hacksfor2-4a.ipynb#X10sdnNjb2RlLXJlbW90ZQ%3D%3D?line=1'&gt;2&lt;/a&gt;</span>     with app.app_context():
+<span class="ansi-green-fg">----&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/mnt/c/Users/Sarah%20Liu/vscode/Sarah-Liu/_notebooks/2023-03-13-hacksfor2-4a.ipynb#X10sdnNjb2RlLXJlbW90ZQ%3D%3D?line=2'&gt;3&lt;/a&gt;</span>         car = db.session.query(Car).filter_by(_uid=uid).first()
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/mnt/c/Users/Sarah%20Liu/vscode/Sarah-Liu/_notebooks/2023-03-13-hacksfor2-4a.ipynb#X10sdnNjb2RlLXJlbW90ZQ%3D%3D?line=3'&gt;4&lt;/a&gt;</span>         try:
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/mnt/c/Users/Sarah%20Liu/vscode/Sarah-Liu/_notebooks/2023-03-13-hacksfor2-4a.ipynb#X10sdnNjb2RlLXJlbW90ZQ%3D%3D?line=4'&gt;5&lt;/a&gt;</span>             print("Found\n", car.read())
+
+File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/sqlalchemy/orm/query.py:1998</span>, in <span class="ansi-cyan-fg">Query.filter_by</span><span class="ansi-blue-fg">(self, **kwargs)</span>
+<span class="ansi-green-intense-fg ansi-bold">   1971</span> r"""Apply the given filtering criterion to a copy
+<span class="ansi-green-intense-fg ansi-bold">   1972</span> of this :class:`_query.Query`, using keyword expressions.
+<span class="ansi-green-intense-fg ansi-bold">   1973</span> 
+<span class="ansi-green-fg">   (...)</span>
+<span class="ansi-green-intense-fg ansi-bold">   1994</span> 
+<span class="ansi-green-intense-fg ansi-bold">   1995</span> """
+<span class="ansi-green-intense-fg ansi-bold">   1996</span> from_entity = self._filter_by_zero()
+<span class="ansi-green-fg">-&gt; 1998</span> clauses = [
+<span class="ansi-green-intense-fg ansi-bold">   1999</span>     _entity_namespace_key(from_entity, key) == value
+<span class="ansi-green-intense-fg ansi-bold">   2000</span>     for key, value in kwargs.items()
+<span class="ansi-green-intense-fg ansi-bold">   2001</span> ]
+<span class="ansi-green-intense-fg ansi-bold">   2002</span> return self.filter(*clauses)
+
+File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/sqlalchemy/orm/query.py:1999</span>, in <span class="ansi-cyan-fg">&lt;listcomp&gt;</span><span class="ansi-blue-fg">(.0)</span>
+<span class="ansi-green-intense-fg ansi-bold">   1971</span> r"""Apply the given filtering criterion to a copy
+<span class="ansi-green-intense-fg ansi-bold">   1972</span> of this :class:`_query.Query`, using keyword expressions.
+<span class="ansi-green-intense-fg ansi-bold">   1973</span> 
+<span class="ansi-green-fg">   (...)</span>
+<span class="ansi-green-intense-fg ansi-bold">   1994</span> 
+<span class="ansi-green-intense-fg ansi-bold">   1995</span> """
+<span class="ansi-green-intense-fg ansi-bold">   1996</span> from_entity = self._filter_by_zero()
+<span class="ansi-green-intense-fg ansi-bold">   1998</span> clauses = [
+<span class="ansi-green-fg">-&gt; 1999</span>     _entity_namespace_key(from_entity, key) == value
+<span class="ansi-green-intense-fg ansi-bold">   2000</span>     for key, value in kwargs.items()
+<span class="ansi-green-intense-fg ansi-bold">   2001</span> ]
+<span class="ansi-green-intense-fg ansi-bold">   2002</span> return self.filter(*clauses)
+
+File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/sqlalchemy/sql/base.py:2122</span>, in <span class="ansi-cyan-fg">_entity_namespace_key</span><span class="ansi-blue-fg">(entity, key, default)</span>
+<span class="ansi-green-intense-fg ansi-bold">   2120</span>         return getattr(ns, key)  # type: ignore
+<span class="ansi-green-intense-fg ansi-bold">   2121</span> except AttributeError as err:
+<span class="ansi-green-fg">-&gt; 2122</span>     raise exc.InvalidRequestError(
+<span class="ansi-green-intense-fg ansi-bold">   2123</span>         'Entity namespace for "%s" has no property "%s"' % (entity, key)
+<span class="ansi-green-intense-fg ansi-bold">   2124</span>     ) from err
+
+<span class="ansi-red-fg">InvalidRequestError</span>: Entity namespace for "cars" has no property "_uid"</pre>
+</div>
+</div>
+
 </div>
 </div>
 
