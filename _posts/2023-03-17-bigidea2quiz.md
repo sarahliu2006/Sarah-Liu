@@ -7,4 +7,12 @@ categories: [markdown,week26,tri3]
 tags: true
 ---
 
-# Overall Score
+# Overall Score: 24/25
+
+# What I got Wrong: Question 21
+
+What I answered:
+A. 
+C. 
+
+
