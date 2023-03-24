@@ -27,7 +27,8 @@ Sorting by year will sort the spreadsheet on column C from least to greatest. Fi
 
 # Questions I struggled with 
 
-
+When I was taking the test, I noticed that I've always struggled with questions similar to 21 like question 16, 19, 20, 23. I think this is because these questions had more content compared to the other questions. To add on, the questions asked for certain parameters that had to be written in a code format, which took a long time because they gave a lot of parameters and you needed to know which parameter is written where and how.
 
 # Summary
 
+Overall, I'm very satisfied with my score and I hope I can continue to score as high as this quiz. 
