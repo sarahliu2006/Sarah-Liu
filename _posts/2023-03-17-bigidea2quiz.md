@@ -43,16 +43,11 @@ I feel like though I have been doing work each week, I realize that I don't comm
 
 # Individual CPT Plans 
 
-For the CPT, my role is the Backend. I plan to make sure my group's backend is working and fully functioning.
-After speaking with Mort, we plan to have separate simulations for each member.
-My part of the project is going to be the a card game, and I will most likely try to incorporate binary through the use of images.
+For the CPT, my role is the Backend. I plan to make sure my group's backend is working and fully functioning.s
 
-import random
-
-cards = ["Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King"] 
-suits = ["Diamonds", "Hearts", "Spades", "Clubs"]
-
-print(random.choice(cards) + " of " + random.choice(suits))
+As backend So far…
+- Created a backend
+- Added some code to the website
 
 # Summary
 
