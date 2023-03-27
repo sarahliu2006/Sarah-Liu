@@ -35,7 +35,11 @@ When I was taking the test, I noticed that I've always struggled with questions 
 
 # Commits
 
+<img src= "https://github.com/sarahliu2006/Sarah-Liu/blob/a96c7c43f0155accbf3392e751199f6dacee7aa0/_notebooks/images/commits.PNG?raw=true">
+
 I feel like though I have been doing work each week, I realize that I don't commit my changes and contributions as much as I should- which is something I will work on. 
+
+
 
 # Individual CPT Plans 
 
