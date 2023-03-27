@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      14 min read
+      17 min read
     
 </span></p>
 
@@ -961,7 +961,7 @@ Since variable size isn't determined by input size, our space complexity would r
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>There are two nested loops that both repeat the same collection. This means that the time taken to complete the algorithm grows quadruples with the size of the collection.</p>
+<p>O(N*N) is the answer. There are two nested loops that both repeat the same collection. This means that the time taken to complete the algorithm grows quadruples with the size of the collection.</p>
 
 </div>
 </div>
@@ -979,6 +979,10 @@ Since variable size isn't determined by input size, our space complexity would r
         <span class="n">k</span> <span class="o">=</span> <span class="n">k</span> <span class="o">+</span> <span class="n">n</span> <span class="o">/</span> <span class="mi">2</span>
 
 <span class="c1"># Options</span>
+<span class="c1"># O(n)</span>
+<span class="c1"># O(N log N)</span>
+<span class="c1"># O(n^2)</span>
+<span class="c1"># O(n^2Logn)</span>
 </pre></div>
 
     </div>
@@ -988,6 +992,187 @@ Since variable size isn't determined by input size, our space complexity would r
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>O(N log N) is the answer. The first for statement is N. The second for statement is logN. pow(2,j) represents the step size so for each iteration of the second for, j increases until 2^j = n which means that j = log(2)n. Then it stops so the time complexity is N*logN.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>What does it mean when we say that an algorithm X is asymptotically more efficient than Y?</p>
+<ol>
+<li>X will always be a better choice for small inputs</li>
+<li>X will always be a better choice for large inputs</li>
+<li>Y will always be a better choice for small inputs</li>
+<li>X will always be a better choice for all inputs</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The answer is 2. The worst-case time complexity of an algorithm is a measure of the largest amount of time it takes to run for any input size n. When we say that algorithm X is asymptotically more efficient than algorithm Y, we mean that X has a smaller worst-case time complexity than Y. This implies that as the input size increases towards infinity, X will eventually become faster than Y for large enough inputs.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">i</span> <span class="o">=</span> <span class="n">N</span>
+<span class="k">while</span> <span class="p">(</span><span class="n">i</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">):</span>
+  <span class="n">a</span> <span class="o">+=</span> <span class="n">i</span>
+  <span class="n">i</span> <span class="o">//=</span> <span class="mi">2</span>
+
+<span class="c1">#Options</span>
+<span class="c1">#O(N)</span>
+<span class="c1"># O(Sqrt(N))</span>
+<span class="c1"># O(N / 2)</span>
+<span class="c1"># O(log N)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>O(log N) is the answer. We have to find the smallest x such that ‘(N / 2^x )&lt; 1 OR  2^x &gt; N’ 
+x = log(N)</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li>Which of the following best describes the useful criterion for comparing the efficiency of algorithms?</li>
+</ol>
+<ul>
+<li>Time</li>
+<li>Memory</li>
+<li>Both of the above</li>
+<li>None of the above</li>
+</ul>
+<p>The answer is 3. Comparing the efficiency of an algorithm depends on the time and memory taken by  an algorithm. The algorithm which runs in lesser time and takes less memory even for a large input size is considered a more efficient algorithm.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li>How is time complexity measured?</li>
+</ol>
+<ul>
+<li>By counting the number of algorithms in an algorithm.</li>
+<li>By counting the number of primitive operations performed by the algorithm on a given input size.</li>
+<li>By counting the size of data input to the algorithm.</li>
+<li>None of the above</li>
+</ul>
+<p>The answer is 2. To determine the time complexity of an algorithm, we first identify the operations that the algorithm performs, and then we count the number of times each operation is executed as a function of the input size n.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+  <span class="n">i</span><span class="o">=</span><span class="n">i</span><span class="o">*</span><span class="n">k</span>
+
+<span class="c1"># Options</span>
+<span class="c1"># O(n)</span>
+<span class="c1"># O(k)</span>
+<span class="c1"># O(logkn)</span>
+<span class="c1"># O(lognk)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The answer is O(logkn). Because loops for the kn-1 times, so after taking log it becomes logkn.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">value</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+  <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
+    <span class="n">value</span><span class="o">=</span><span class="n">value</span><span class="o">+</span><span class="mi">1</span>
+
+<span class="c1"># Options</span>
+<span class="c1">#n</span>
+<span class="c1"># (n+1)</span>
+<span class="c1"># n(n-1)</span>
+<span class="c1"># n(n+1)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The answer is n(n-1). First for loop will run for (n) times and another for loop will be run for (n-1) times as the inner loop will only run till the range i which is 1 less than n , so overall time will be n(n-1).</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li>Algorithm A and B have a worst-case running time of O(n) and O(logn), respectively. Therefore, algorithm B always runs faster than algorithm A.</li>
+</ol>
+<ul>
+<li>True</li>
+<li>False</li>
+</ul>
+<p>The answer is false. The Big-O notation provides an asymptotic comparison in the running time of algorithms. For n &lt; n0​​, algorithm A might run faster than algorithm B, for instance.</p>
+
+</div>
+</div>
+</div>
 </div>
 
 
