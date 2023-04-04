@@ -13,14 +13,12 @@
 <link rel="canonical" href="https://sarahliu2006.github.io/Sarah-Liu/2023/03/29/DS-hashmaps.html" />
 <meta property="og:url" content="https://sarahliu2006.github.io/Sarah-Liu/2023/03/29/DS-hashmaps.html" />
 <meta property="og:site_name" content="SARAH LIU" />
-<meta property="og:image" content="https://sarahliu2006.github.io/Sarah-Liu/images/python.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2023-03-29T00:00:00-05:00" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://sarahliu2006.github.io/Sarah-Liu/images/python.png" />
+<meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Data Structures- Hashmaps, Sets, Hash Tables, Hashing and Collisions" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-03-29T00:00:00-05:00","datePublished":"2023-03-29T00:00:00-05:00","description":"Observing hashmaps with python dictionaries","headline":"Data Structures- Hashmaps, Sets, Hash Tables, Hashing and Collisions","image":"https://sarahliu2006.github.io/Sarah-Liu/images/python.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://sarahliu2006.github.io/Sarah-Liu/2023/03/29/DS-hashmaps.html"},"url":"https://sarahliu2006.github.io/Sarah-Liu/2023/03/29/DS-hashmaps.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-03-29T00:00:00-05:00","datePublished":"2023-03-29T00:00:00-05:00","description":"Observing hashmaps with python dictionaries","headline":"Data Structures- Hashmaps, Sets, Hash Tables, Hashing and Collisions","mainEntityOfPage":{"@type":"WebPage","@id":"https://sarahliu2006.github.io/Sarah-Liu/2023/03/29/DS-hashmaps.html"},"url":"https://sarahliu2006.github.io/Sarah-Liu/2023/03/29/DS-hashmaps.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/Sarah-Liu/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://sarahliu2006.github.io/Sarah-Liu/feed.xml" title="SARAH LIU" /><link rel="shortcut icon" type="image/x-icon" href="/Sarah-Liu/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -124,7 +122,7 @@ window.onload = wrap_img;
 <p>The primary purpose of a hashtable is to provide efficient lookup, insertion, and deletion operations. When an element is to be inserted into the hashtable, a hash function is used to map the key to a specific index in the underlying array that is used to store the key-value pairs. The value is then stored at that index. When searching for a value, the hash function is used again to find the index where the value is stored.</p>
 <p>The key advantage of a hashtable over other data structures like arrays and linked lists is its average-case time complexity for lookup, insertion, and deletion operations.</p>
 <ul>
-<li>The typical time complexity of a hashtable is run. </li>
+<li>The typical time complexity of a hashtable is O(1) </li>
 </ul>
 
 </div>
@@ -395,9 +393,6 @@ The Man
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">k</span><span class="p">,</span><span class="n">v</span> <span class="ow">in</span> <span class="n">lover_album</span><span class="o">.</span><span class="n">items</span><span class="p">():</span> <span class="c1"># iterate using a for loop for key and value</span>
     <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">k</span><span class="p">)</span> <span class="o">+</span> <span class="s2">": "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">v</span><span class="p">))</span>
-
-<span class="c1"># Write your own code to print tracks in readable format</span>
-<span class="c1">#</span>
 </pre></div>
 
     </div>
@@ -500,6 +495,19 @@ producer: {'Joel Little', 'Taylor Swift', 'Frank Dukes', 'Louis Bell', 'Jack Ant
 
     <span class="p">}</span>
 <span class="p">}</span>
+
+<span class="k">def</span> <span class="nf">print_album</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Artists:"</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">artist</span> <span class="ow">in</span> <span class="n">astroworld_album</span><span class="p">[</span><span class="s2">"artists"</span><span class="p">]:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"- </span><span class="si">{</span><span class="n">artist</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+        
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Genre:"</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">genre</span> <span class="ow">in</span> <span class="n">astroworld_album</span><span class="p">[</span><span class="s2">"genre"</span><span class="p">]:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"- </span><span class="si">{</span><span class="n">genre</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+        
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Tracks:"</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">track_number</span><span class="p">,</span> <span class="n">track_title</span> <span class="ow">in</span> <span class="n">astroworld_album</span><span class="p">[</span><span class="s2">"tracks"</span><span class="p">]</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">track_number</span><span class="si">}</span><span class="s2">. </span><span class="si">{</span><span class="n">track_title</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 
 <span class="c1"># Printing the dictionary</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">astroworld_album</span><span class="p">)</span>
