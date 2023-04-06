@@ -18,21 +18,21 @@ week: 29
 > As we have learned, a computer needs aa program to do something smart.  The sequence of a program initiates a series of actions with the computers Central Processing Unit (CPU). This component is essentially a binary machine focussing on program instructions provided.  The CPU retrieives and stores the data it acts upon in Random Access Memory (RAM). Between the CPU, RAM, and Storage Devices a computer can work with many programs and large amounts of data.
 
 List specification of your Computer, or Computers if working as Pair/Trio
-- Processor GHz:
-- Memory in GB:
-- Storage in GB:
-- OS:
+- Processor GHz: Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz   2.00 GHz
+- Memory in GB: 7.2/7.8 GB
+- Storage in GB: 88.4/ 237 GB
+- OS: 19045.2728
 
 Define or describe usage of Computer using Computer Programs. Pictures are preferred over a lot of text.  Use your experience.
-- Input devices
-- Output devices
-- Program File
-- Program Code
-- Processes
-- Ports
-- Data File
-- Inspect Running Code
-- Inspect Variables
+- Input devices: A term for a physical piece of hardware that connects to a primary device. Examples include keboard, mouse and headset.
+- Output devices: Data that is being presented within the primary device. Examples include computer monitor, 3D printer, and laser cutter.
+- Program File: A file that contains instructions for the computer. 
+- Program Code: The instructions given on the machine to create a computer program.
+- Processes: An instance running on a computer.
+- Ports: A virtual point where network connections start and end.
+- Data File: A computer file that stores data to be used by computer application of system, includes input and output data.
+- Inspect Running Code: A way to debug code
+- Inspect Variables: Debuging code using "cherry tomatoes"
 
 
 ![Computer Hardware]({{site.baseurl}}/images/cpu.jpeg)
