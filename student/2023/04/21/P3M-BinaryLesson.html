@@ -82,7 +82,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      4 min read
+      5 min read
     
 </span></p>
 
@@ -165,7 +165,7 @@ window.onload = wrap_img;
 <li>How many bits are in 3 bytes?
 24 bits</li>
 <li>What digital information can be represented by bits? 
-Numbers</li>
+0 or 1</li>
 <li>Are bits an analog or digital form of storing data? What is the difference between the two?
 Digital form of storing data. </li>
 </ol>
@@ -209,7 +209,7 @@ Digital form of storing data. </li>
         <span class="n">runs</span> <span class="o">-=</span> <span class="mi">1</span>
      
 <span class="c1"># Change the parameter to how many times to run the function.   </span>
-<span class="n">example</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">example</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -222,10 +222,15 @@ Digital form of storing data. </li>
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>binary is awesome
+<pre>binary is cool
 binary is awesome
+binary is cool
+binary is cool
+binary is cool
 binary is awesome
-binary is awesome
+binary is cool
+binary is cool
+binary is cool
 binary is cool
 </pre>
 </div>
@@ -257,12 +262,10 @@ binary is cool
 <ol>
 <li>What is the largest number can be represented by 5 bits?
 31</li>
-<li>
-<p>One programing language can only use 16 bits to represent non-negative numbers, while a second language uses 56 bits to represent numbers. How many times as many unique numbers can be represented by the second language?</p>
-</li>
-<li>
-<p>5 bits are used to represent both positive and negative numbers, what is the largest number that can be represented by these bits? (<em>hint: different than question 1</em>)</p>
-</li>
+<li>One programing language can only use 16 bits to represent non-negative numbers, while a second language uses 56 bits to represent numbers. How many times as many unique numbers can be represented by the second language?
+2^56 - 2^16 = 2^40</li>
+<li>5 bits are used to represent both positive and negative numbers, what is the largest number that can be represented by these bits? (<em>hint: different than question 1</em>)
+8</li>
 </ol>
 <h4 id="Examples">
 <a class="anchor" href="#Examples" aria-hidden="true"><span class="octicon octicon-link"></span></a>Examples<a class="anchor-link" href="#Examples"> </a>
@@ -285,6 +288,11 @@ binary is cool
 
 <span class="c1"># How can function become a problem? (Hint: what happens if you set both base and power equal to high numbers?)</span>
 <span class="n">exponent</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+
+<span class="c1"># A function like this can become a problem if both the base and power parameters are set to very high numbers. </span>
+<span class="c1"># The math.pow() function is used to calculate the exponent given the inputed base and power.</span>
+<span class="c1"># By setting botht he base and power equal to high powers, the result may be inaccurate or wrong.</span>
+<span class="c1"># It is important to understand the limitations of the data types being used.</span>
 </pre></div>
 
     </div>
@@ -389,10 +397,92 @@ Base 16</li>
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">binary_to_decimal</span><span class="p">(</span><span class="n">binary</span><span class="p">):</span>
+    <span class="sd">"""</span>
+<span class="sd">    Convert a binary sequence to decimal.</span>
+<span class="sd">    """</span>
+    <span class="n">decimal</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">digit</span> <span class="ow">in</span> <span class="n">binary</span><span class="p">:</span>
+        <span class="n">decimal</span> <span class="o">=</span> <span class="n">decimal</span><span class="o">*</span><span class="mi">2</span> <span class="o">+</span> <span class="nb">int</span><span class="p">(</span><span class="n">digit</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">decimal</span>
+
+
+<span class="k">def</span> <span class="nf">decimal_to_binary</span><span class="p">(</span><span class="n">decimal</span><span class="p">):</span>
+    <span class="sd">"""</span>
+<span class="sd">    Convert a decimal number to binary sequence.</span>
+<span class="sd">    """</span>
+    <span class="n">binary</span> <span class="o">=</span> <span class="s2">""</span>
+    <span class="k">if</span> <span class="n">decimal</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">binary</span> <span class="o">=</span> <span class="s2">"0"</span>
+    <span class="k">while</span> <span class="n">decimal</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">binary</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">decimal</span> <span class="o">%</span> <span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <span class="n">binary</span>
+        <span class="n">decimal</span> <span class="o">//=</span> <span class="mi">2</span>
+    <span class="k">return</span> <span class="n">binary</span>
+
+
+<span class="k">def</span> <span class="nf">binary_addition</span><span class="p">(</span><span class="n">binary1</span><span class="p">,</span> <span class="n">binary2</span><span class="p">):</span>
+    <span class="sd">"""</span>
+<span class="sd">    Add two binary sequences and return the result as a binary sequence.</span>
+<span class="sd">    """</span>
+    <span class="n">decimal1</span> <span class="o">=</span> <span class="n">binary_to_decimal</span><span class="p">(</span><span class="n">binary1</span><span class="p">)</span>
+    <span class="n">decimal2</span> <span class="o">=</span> <span class="n">binary_to_decimal</span><span class="p">(</span><span class="n">binary2</span><span class="p">)</span>
+    <span class="n">decimal_sum</span> <span class="o">=</span> <span class="n">decimal1</span> <span class="o">+</span> <span class="n">decimal2</span>
+    <span class="k">return</span> <span class="n">decimal_to_binary</span><span class="p">(</span><span class="n">decimal_sum</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">binary_subtraction</span><span class="p">(</span><span class="n">binary1</span><span class="p">,</span> <span class="n">binary2</span><span class="p">):</span>
+    <span class="sd">"""</span>
+<span class="sd">    Subtract two binary sequences and return the result as a binary sequence.</span>
+<span class="sd">    """</span>
+    <span class="n">decimal1</span> <span class="o">=</span> <span class="n">binary_to_decimal</span><span class="p">(</span><span class="n">binary1</span><span class="p">)</span>
+    <span class="n">decimal2</span> <span class="o">=</span> <span class="n">binary_to_decimal</span><span class="p">(</span><span class="n">binary2</span><span class="p">)</span>
+    <span class="n">decimal_diff</span> <span class="o">=</span> <span class="n">decimal1</span> <span class="o">-</span> <span class="n">decimal2</span>
+    <span class="k">if</span> <span class="n">decimal_diff</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">"-"</span> <span class="o">+</span> <span class="n">decimal_to_binary</span><span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="n">decimal_diff</span><span class="p">))</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">decimal_to_binary</span><span class="p">(</span><span class="n">decimal_diff</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">binary_multiplication</span><span class="p">(</span><span class="n">binary1</span><span class="p">,</span> <span class="n">binary2</span><span class="p">):</span>
+    <span class="sd">"""</span>
+<span class="sd">    Multiply two binary sequences and return the result as a binary sequence.</span>
+<span class="sd">    """</span>
+    <span class="n">decimal1</span> <span class="o">=</span> <span class="n">binary_to_decimal</span><span class="p">(</span><span class="n">binary1</span><span class="p">)</span>
+    <span class="n">decimal2</span> <span class="o">=</span> <span class="n">binary_to_decimal</span><span class="p">(</span><span class="n">binary2</span><span class="p">)</span>
+    <span class="n">decimal_prod</span> <span class="o">=</span> <span class="n">decimal1</span> <span class="o">*</span> <span class="n">decimal2</span>
+    <span class="k">return</span> <span class="n">decimal_to_binary</span><span class="p">(</span><span class="n">decimal_prod</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">binary_division</span><span class="p">(</span><span class="n">binary1</span><span class="p">,</span> <span class="n">binary2</span><span class="p">):</span>
+    <span class="sd">"""</span>
+<span class="sd">    Divide two binary sequences and return the quotient as a binary sequence.</span>
+<span class="sd">    """</span>
+    <span class="n">decimal1</span> <span class="o">=</span> <span class="n">binary_to_decimal</span><span class="p">(</span><span class="n">binary1</span><span class="p">)</span>
+    <span class="n">decimal2</span> <span class="o">=</span> <span class="n">binary_to_decimal</span><span class="p">(</span><span class="n">binary2</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">decimal2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">"Error: Division by zero"</span>
+    <span class="n">decimal_quot</span> <span class="o">=</span> <span class="n">decimal1</span> <span class="o">//</span> <span class="n">decimal2</span>
+    <span class="k">return</span> <span class="n">decimal_to_binary</span><span class="p">(</span><span class="n">decimal_quot</span><span class="p">)</span>
+
+<span class="n">result</span> <span class="o">=</span> <span class="n">binary_addition</span><span class="p">(</span><span class="s2">"101"</span><span class="p">,</span> <span class="s2">"1001"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>  
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1110
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
