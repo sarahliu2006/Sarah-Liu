@@ -110,7 +110,7 @@ window.onload = wrap_img;
         
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Introduction">Introduction<a class="anchor-link" href="#Introduction"> </a></h1><p>When building an application that requires users to create accounts or sign in, handling data related to users is crucial. This data can include things like user profiles, preferences, and activity logs, which can be used to <strong>_</strong> the user experience and <strong>_</strong> the application's performance.</p>
+<h1 id="Introduction">Introduction<a class="anchor-link" href="#Introduction"> </a></h1><p>When building an application that requires users to create accounts or sign in, handling data related to users is crucial. This data can include things like user profiles, preferences, and activity logs, which can be used to personalize the user experience and improve the application's performance.</p>
 <p>By learning how to handle data related to users effectively and efficiently, you'll be equipped with the skills and knowledge needed to build helpful applications that meet the needs of your users.</p>
 <p><strong>PLEASE DON'T OPEN THE POPCORN HACKS, WE WILL OPEN THEM DURING THE PRESENTATION</strong></p>
 
@@ -119,7 +119,7 @@ window.onload = wrap_img;
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Basics-of-Class-and-User-Data">Basics of Class and User Data<a class="anchor-link" href="#Basics-of-Class-and-User-Data"> </a></h2><h4 id="Establishing-Class/User-Data-and-making-a-new-user">Establishing Class/User Data and making a new user<a class="anchor-link" href="#Establishing-Class/User-Data-and-making-a-new-user"> </a></h4><p>Because Python is an object-oriented programming (OOP) language, everything in it represents an <strong>_</strong>. Lists, dictionaries, functions, etc. are all examples of Python objects. Generally speaking, a Python object is an entity of <strong>_</strong> items and methods describing the behavior of those items.</p>
+<h2 id="Basics-of-Class-and-User-Data">Basics of Class and User Data<a class="anchor-link" href="#Basics-of-Class-and-User-Data"> </a></h2><h4 id="Establishing-Class/User-Data-and-making-a-new-user">Establishing Class/User Data and making a new user<a class="anchor-link" href="#Establishing-Class/User-Data-and-making-a-new-user"> </a></h4><p>Because Python is an object-oriented programming (OOP) language, everything in it represents an object. Lists, dictionaries, functions, etc. are all examples of Python objects. Generally speaking, a Python object is an entity of data items and methods describing the behavior of those items.</p>
 <p>A Python <strong>class</strong> is a template used to create Python objects. We can think of it as a cooking recipe, where all the ingredients and their quantities are listed, and the whole process of cooking is described step-by-step.</p>
 <p>In this case, we can compare a cake recipe to a class, and a cake cooked following that recipe to an object (i.e., an instance of that class). Using the same recipe (class), we can create many cakes (objects). This is the essence of creating a class in Python: to define data elements and the rules establishing how these elements can interact and change their state — and then use this framework to build various objects in a set way, instead of creating them from scratch every time.</p>
 <p>Let's look at a few examples:</p>
@@ -177,6 +177,20 @@ window.onload = wrap_img;
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Name: Mountain Bike, Gears: 11 
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -200,10 +214,24 @@ Add another print command to display the attributes of Bike #2. What output will
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Name: </span><span class="si">{</span><span class="n">bike2</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">, Gears: </span><span class="si">{</span><span class="n">bike2</span><span class="o">.</span><span class="n">gear</span><span class="si">}</span><span class="s2"> &quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Name: Road Bike, Gears: 13 
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -243,7 +271,7 @@ Add another print command to display the attributes of Bike #2. What output will
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>For this cell, we define a User class with a <strong>_</strong> method "init" that takes username and email as <strong>_</strong>. The display_info method is used to print the user information.</p>
+<p>For this cell, we define a User class with a constructor method "init" that takes username and email as arguments. The display_info method is used to print the user information.</p>
 <p>For backend functionality, this class can be used to create, manipulate, and manage user data. For example, when a new user signs up for an account, you could create a new User object with their username and email. This object can then be used to perform various operations, such as validating the user's input, storing the user's data in a database, or processing user-related requests.</p>
 
 </div>
@@ -271,6 +299,20 @@ Add another print command to display the attributes of Bike #2. What output will
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Username: jeffrey, Email: leejeffreysc@gmail.com
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -284,7 +326,7 @@ Add another print command to display the attributes of Bike #2. What output will
 <li>@property decorator (aka getter).  This enables developers to "GET" attribute data in a clean method (object.name versus object.get_name())</li>
 <li>@name.setter decorator (aka setter).  This enables developers to "UPDATE"/set attribute data in a clean method (object.name = "Jeffrey" versus object.set_name("Jeffrey"))</li>
 </ul>
-<p>The getter and setter methods provide a clean and controlled way to <strong>_</strong> and <strong>_</strong> the attributes of an object. This can be particularly useful when interacting with databases, APIs, or other parts of a web application that require the management and manipulation of object attributes.</p>
+<p>The getter and setter methods provide a clean and controlled way to set and get the attributes of an object. This can be particularly useful when interacting with databases, APIs, or other parts of a web application that require the management and manipulation of object attributes.</p>
 
 </div>
 </div>
@@ -340,6 +382,21 @@ Add another print command to display the attributes of Bike #2. What output will
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Derek Sol
+Jagger Klein
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -402,10 +459,27 @@ The following code segment for computers does not have getter and setter methods
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">comp</span> <span class="o">=</span> <span class="n">Computer</span><span class="p">(</span><span class="s2">&quot;Dell&quot;</span><span class="p">,</span> <span class="mi">2015</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">comp</span><span class="o">.</span><span class="n">model</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">comp</span><span class="o">.</span><span class="n">year</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Dell
+2015
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -421,7 +495,7 @@ The following code segment for computers does not have getter and setter methods
 <li>Keeping track of inventory levels and stock movements in a warehouse or retail store.</li>
 <li>Managing financial transactions, such as payments, invoices, and receipts.</li>
 </ul>
-<p>SQLite is a software <strong>_</strong> that provides a user-friendly database management system. Unlike other databases, such as MySQL or PostgreSQL, SQLite is programmed within an application, which means it does not require a separate server process to operate. This makes SQLite great for web applications or for use in situations where you don't need a full database server.</p>
+<p>SQLite is a software library that provides a user-friendly database management system. Unlike other databases, such as MySQL or PostgreSQL, SQLite is programmed within an application, which means it does not require a separate server process to operate. This makes SQLite great for web applications or for use in situations where you don't need a full database server.</p>
 <p>In this lesson, we will be demonstrating how to set up a SQLite database in Flask, a Python web framework. Flask allows programmers to easily interact with SQLite databases, and we'll walk through the process of setting up a new database, creating tables, and adding data. We'll also cover some basic SQL commands that you can use to interact with your database, including CREATE TABLE, INSERT, SELECT, UPDATE, and DELETE.</p>
 <h2 id="Setting-up-a-SQLite-database-in-Flask">Setting up a SQLite database in Flask<a class="anchor-link" href="#Setting-up-a-SQLite-database-in-Flask"> </a></h2>
 </div>
@@ -890,8 +964,8 @@ The menu function below is missing some of the CRUD functions for the specified 
 <span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">&#39;database.db&#39;</span><span class="p">)</span>
 
 <span class="c1"># Read the image file as binary data</span>
-<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;image.jpg&#39;</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">jpg</span><span class="p">:</span>
-    <span class="n">image_data</span> <span class="o">=</span> <span class="n">jpg</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;image.jpeg&#39;</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">jpeg</span><span class="p">:</span>
+    <span class="n">image_data</span> <span class="o">=</span> <span class="n">jpeg</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
 
 <span class="c1"># Insert the image data into the database</span>
 <span class="n">conn</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;INSERT INTO images (name, data) VALUES (?, ?)&quot;</span><span class="p">,</span> <span class="p">(</span><span class="s1">&#39;image&#39;</span><span class="p">,</span> <span class="n">image_data</span><span class="p">))</span>
