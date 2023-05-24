@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      9 min read
+      10 min read
     
 </span></p>
 
@@ -198,6 +198,14 @@ window.onload = wrap_img;
             <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">],</span> <span class="c1"># decimal</span>
             <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="s2">"A"</span><span class="p">,</span> <span class="s2">"B"</span><span class="p">,</span> <span class="s2">"C"</span><span class="p">,</span> <span class="s2">"D"</span><span class="p">,</span> <span class="s2">"E"</span><span class="p">,</span> <span class="s2">"F"</span><span class="p">]</span> <span class="c1"># hexadecimal</span>
             <span class="p">]</span>
+    
+    <span class="n">tree</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="p">[</span><span class="s2">""</span><span class="p">,</span> <span class="s2">"*"</span><span class="p">],</span>
+        <span class="p">[</span><span class="s2">""</span><span class="p">,</span><span class="s2">"/,|],</span>
+        <span class="p">[</span><span class="s2">""</span><span class="p">,</span><span class="s2">"/"</span><span class="p">,</span><span class="s2">""</span><span class="p">,</span> <span class="s2">"|"</span><span class="p">],</span>
+        <span class="p">[</span><span class="o">/</span><span class="p">,</span><span class="s2">""</span><span class="p">,</span><span class="s2">""</span><span class="p">,</span> \<span class="p">],</span>
+        <span class="p">[,</span><span class="o">/</span><span class="p">,</span><span class="s2">""</span><span class="p">,</span><span class="s2">""</span><span class="p">,</span> \<span class="p">]</span>
+    <span class="p">]</span>
         
     <span class="c1"># pack into a list of matrices with titles</span>
     <span class="n">matrices</span> <span class="o">=</span> <span class="p">[</span>
@@ -290,10 +298,10 @@ window.onload = wrap_img;
 
 
 
-<div id="3d14a224-e202-45c1-a142-afafdef2a5f8"></div>
+<div id="a611332c-2e3b-4c85-bcca-504f9f535728"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#3d14a224-e202-45c1-a142-afafdef2a5f8');
+var element = $('#a611332c-2e3b-4c85-bcca-504f9f535728');
 
 /*
 * Creator: Nighthawk Coding Society
@@ -503,8 +511,8 @@ element.append(arr2D);
 
 <span class="c1"># As you can see, its not very optimal </span>
 <span class="k">def</span> <span class="nf">ship1</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"    |\ "</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"    |/ "</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"  //"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">" ('&gt;"</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"\__ |__/ "</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">" \____/ "</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\u001b</span><span class="s2">[34m -------------------------------------------- </span><span class="se">\u001b</span><span class="s2">[37m"</span><span class="p">)</span>
@@ -819,6 +827,57 @@ element.append(arr2D);
 </div>
 </div>
 
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">time</span> <span class="c1"># used for delay</span>
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">clear_output</span>  <span class="c1"># jupyter specific clear</span>
+
+
+<span class="c1"># ANSI Color Codes</span>
+<span class="n">GRASS_COLOR</span> <span class="o">=</span> <span class="sa">u</span><span class="s2">"</span><span class="se">\u001B</span><span class="s2">[34m</span><span class="se">\u001B</span><span class="s2">[2D"</span>
+<span class="n">BUNNY_COLOR</span> <span class="o">=</span> <span class="sa">u</span><span class="s2">"</span><span class="se">\u001B</span><span class="s2">[35m</span><span class="se">\u001B</span><span class="s2">[2D"</span>
+<span class="n">RESET_COLOR</span> <span class="o">=</span> <span class="sa">u</span><span class="s2">"</span><span class="se">\u001B</span><span class="s2">[0m</span><span class="se">\u001B</span><span class="s2">[2D"</span>
+
+<span class="k">def</span> <span class="nf">bunny_print</span><span class="p">(</span><span class="n">position</span><span class="p">):</span>  <span class="c1"># print ship with colors and leading spaces according to position</span>
+    <span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">RESET_COLOR</span><span class="p">)</span>
+    
+    <span class="n">sp</span> <span class="o">=</span> <span class="s2">" "</span> <span class="o">*</span> <span class="n">position</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">sp</span> <span class="o">+</span> <span class="s2">"  //"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">sp</span> <span class="o">+</span> <span class="s2">" ('&gt;"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">SHIP_COLOR</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">""</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">sp</span> <span class="o">+</span> <span class="s2">" /rr"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">sp</span> <span class="o">+</span> <span class="s2">"*\))_"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">GRASS_COLOR</span> <span class="o">+</span> <span class="s2">"--"</span><span class="o">*</span><span class="mi">32</span> <span class="o">+</span> <span class="n">RESET_COLOR</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">bunny</span><span class="p">():</span>  <span class="c1"># ship function, loop/controller for animation speed and times</span>
+    <span class="c1"># loop control variables</span>
+    <span class="n">start</span> <span class="o">=</span> <span class="mi">0</span>  <span class="c1"># start at zero</span>
+    <span class="n">distance</span> <span class="o">=</span> <span class="mi">60</span>  <span class="c1"># how many times to repeat</span>
+    <span class="n">step</span> <span class="o">=</span> <span class="mi">2</span>  <span class="c1"># count by 2</span>
+
+    <span class="c1"># loop purpose is to animate ship sailing</span>
+    <span class="k">for</span> <span class="n">position</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="n">distance</span><span class="p">,</span> <span class="n">step</span><span class="p">):</span>
+        <span class="n">bunny_print</span><span class="p">(</span><span class="n">position</span><span class="p">)</span>  <span class="c1"># call to function with parameter</span>
+        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="o">.</span><span class="mi">2</span><span class="p">)</span>
+
+        
+<span class="n">bunny</span><span class="p">()</span> <span class="c1"># activate/call ship function</span>
+</pre></div>
+
+    </div>
 </div>
 </div>
 
